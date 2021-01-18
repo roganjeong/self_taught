@@ -8,4 +8,7 @@ Books I Uploaded : ( Class <-> Textbook Title )
  - Statistical Mathematics <-> Calculus_Early_Transcendentals_8th_Edition.pdf
  - Introduction to Mathematical Statistics <-> Hogg_Craig_Introduction-to-Mathematical-Statistics-Pearson.pdf
  - Advanced Linear Regression Analysis <-> Linear Models with R.pdf
+ - Introduction to Statistical Learning <-> Introduction to Statistical Learning-Official.pdf
+ - Introduction to Linear Regression Analysis <-> regression-analysis-by-example-5th-edition.pdf
+ 
 * Some books weren't uploaded for copyrights. Books will be constantly uploaded.
