@@ -11,4 +11,4 @@ Books I Uploaded : ( Class <-> Textbook Title )
  - Introduction to Statistical Learning <-> Introduction to Statistical Learning-Official.pdf
  - Introduction to Linear Regression Analysis <-> regression-analysis-by-example-5th-edition.pdf
  
-* Some books weren't uploaded for copyrights. Books will be constantly uploaded.
+\* Some books weren't uploaded for copyrights. Books will be constantly uploaded.
