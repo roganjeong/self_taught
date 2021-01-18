@@ -12,3 +12,4 @@ Books I Uploaded : ( Class <-> Textbook Title )
  - Introduction to Linear Regression Analysis <-> regression-analysis-by-example-5th-edition.pdf
  
 \* Some books weren't uploaded for copyrights. Books will be constantly uploaded.
+\** For some textbooks, I could not upload the notes.
