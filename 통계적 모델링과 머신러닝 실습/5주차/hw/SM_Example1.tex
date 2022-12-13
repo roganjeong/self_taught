@@ -1,0 +1,1333 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\title{SM\_Example1.R}
+\author{rogans}
+\date{2021-10-15}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={SM\_Example1.R},
+  pdfauthor={rogans},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\begin{document}
+\maketitle
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+\CommentTok{\# Statistical Modelling \& Machine Learning \#}
+\CommentTok{\#               R Example1                 \#}
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+\CommentTok{\# Modelling Example 1:  Nonlinear model with nonconstant variance \#}
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+
+\FunctionTok{library}\NormalTok{(datasets)}
+\NormalTok{?attenu}
+\FunctionTok{dim}\NormalTok{(attenu)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 182   5
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\#\# Linear regression \#\#\#\#\#}
+\NormalTok{fit1 }\OtherTok{=} \FunctionTok{lm}\NormalTok{(accel }\SpecialCharTok{\textasciitilde{}}\NormalTok{ mag }\SpecialCharTok{+}\NormalTok{ dist, }\AttributeTok{data=}\NormalTok{attenu)}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow =} \FunctionTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(fit1)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{SM_Example1_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(fit1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = accel ~ mag + dist, data = attenu)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -0.22045 -0.08175 -0.03330  0.05781  0.55885 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) -0.2188439  0.0862918  -2.536   0.0121 *  
+## mag          0.0729269  0.0146916   4.964  1.6e-06 ***
+## dist        -0.0015488  0.0001705  -9.084  < 2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.1239 on 179 degrees of freedom
+## Multiple R-squared:  0.3163, Adjusted R-squared:  0.3087 
+## F-statistic: 41.41 on 2 and 179 DF,  p-value: 1.659e-15
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow =} \FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{))}
+\CommentTok{\# mag, dist 둘다 유의하다. coefficient of determination 자체는 별로 높지 않다. }
+\CommentTok{\# 이 inference는 error term이 normality를 따른다는 가정 하에 세워진 추정이기 때문에 해당 부분에 대한 검토가 필요하다.}
+
+\CommentTok{\#error term의 normality를 확인하기 위해 residual plot을 그려보겠다. {-}\textgreater{}  residual에 패턴이 존재한다. 이분산이 존재하는 것으로 추정.}
+\CommentTok{\#분산에 대한 조정을 하기에는 아무런 정보가 없어 mean function부터 추정해야 한다. }
+\CommentTok{\#선형이 아닌 회귀모형이 필요한데 아무런 정보가 없는 상태이다. 이렇게 정보가 아무것도 없을 때 사용할 수 있는 것은 GAM이다. }
+
+\DocumentationTok{\#\#\#\#\# GAM \#\#\#\#\#}
+\FunctionTok{library}\NormalTok{(gam)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: splines
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: foreach
+\end{verbatim}
+
+\begin{verbatim}
+## Loaded gam 1.20
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{fit2 }\OtherTok{=} \FunctionTok{gam}\NormalTok{(accel }\SpecialCharTok{\textasciitilde{}} \FunctionTok{s}\NormalTok{(mag,}\DecValTok{5}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{s}\NormalTok{(dist,}\DecValTok{5}\NormalTok{),}\AttributeTok{data=}\NormalTok{attenu) }\CommentTok{\# Degree of Freedom = 5인 smoothing spline을 각 변수에 적용, 여기서 degrees of freedom은 데이터 얼마나 탄력적으로 반응하나의 정도인 것 같다. }
+\NormalTok{fit2 }\OtherTok{=} \FunctionTok{gam}\NormalTok{(accel }\SpecialCharTok{\textasciitilde{}} \FunctionTok{s}\NormalTok{(mag,}\DecValTok{2}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{s}\NormalTok{(dist,}\DecValTok{2}\NormalTok{),}\AttributeTok{data=}\NormalTok{attenu)}
+\NormalTok{fit2 }\OtherTok{=} \FunctionTok{gam}\NormalTok{(accel }\SpecialCharTok{\textasciitilde{}} \FunctionTok{s}\NormalTok{(mag,}\DecValTok{3}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{s}\NormalTok{(dist,}\DecValTok{3}\NormalTok{),}\AttributeTok{data=}\NormalTok{attenu)}
+\NormalTok{fit2 }\OtherTok{=} \FunctionTok{gam}\NormalTok{(accel }\SpecialCharTok{\textasciitilde{}} \FunctionTok{s}\NormalTok{(mag,}\DecValTok{4}\NormalTok{) }\SpecialCharTok{+} \FunctionTok{s}\NormalTok{(dist,}\DecValTok{4}\NormalTok{),}\AttributeTok{data=}\NormalTok{attenu)}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(fit2) }\CommentTok{\# dist는 exponential하게 감소됨이 명확하다. mag는 linear한지 nonlinear한지 명확하지 않기 때문에 test를 해봐야 한다. anova를 해서 F{-}test를 해볼 수 있다. }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{SM_Example1_files/figure-latex/unnamed-chunk-1-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{))}
+
+\NormalTok{fit2\_1 }\OtherTok{=} \FunctionTok{gam}\NormalTok{(accel }\SpecialCharTok{\textasciitilde{}}\NormalTok{ mag }\SpecialCharTok{+} \FunctionTok{s}\NormalTok{(dist,}\DecValTok{5}\NormalTok{),}\AttributeTok{data=}\NormalTok{attenu) }\CommentTok{\#mag를 비선형으로 가정한 fit2와 선형으로 가정한 fit2\_1 비교}
+\FunctionTok{anova}\NormalTok{(fit2,fit2\_1) }\CommentTok{\# p{-}value가 유의하게 나왔으므로 비선형으로 가정하는게 적절하다.}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Analysis of Deviance Table
+## 
+## Model 1: accel ~ s(mag, 4) + s(dist, 4)
+## Model 2: accel ~ mag + s(dist, 5)
+##   Resid. Df Resid. Dev      Df  Deviance Pr(>Chi)
+## 1       173     1.3916                           
+## 2       175     1.4267 -2.0002 -0.035094   0.1129
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# mag: non{-}linear function, dist: exponential function}
+
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\# Nonlinear Model with constant variance \#\#\#\#\#\#\#\#\#\#}
+\CommentTok{\# Y = accel, X1 = mag, X2 = dist.}
+\CommentTok{\# Nonlinear model: Y = beta1 + beta2*X1 + beta3*X1\^{}2 + beta4*exp({-}beta5*X2).}
+\CommentTok{\# GAM을 통해 얻은 정보로 parametric nonlinear regression을 세울 수 있다. 5 parameters}
+\CommentTok{\# beta4는 decreasing scale을 잡아주는 역할, beta5는 decreasing rate을 조절하는 역할}
+\CommentTok{\# mag에 대해서는 polynomial regression, dist에 대해서는 exponential regression을 취한다. }
+\CommentTok{\# dist가 비선형이라 LSE와 같은 잣대로 결정할 수 없다. }
+
+\CommentTok{\#추정한 모델함수 만들기 }
+\CommentTok{\# exponential regression 파트 때문에 일반적인 linear regression technique을 통해 beta값들을 추정할 수 없다. }
+\NormalTok{f }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(beta,X)}
+\NormalTok{\{}
+\NormalTok{  X1 }\OtherTok{=}\NormalTok{ X[,}\DecValTok{1}\NormalTok{]; X2 }\OtherTok{=}\NormalTok{ X[,}\DecValTok{2}\NormalTok{]  }
+\NormalTok{  beta[}\DecValTok{1}\NormalTok{] }\SpecialCharTok{+}\NormalTok{ beta[}\DecValTok{2}\NormalTok{]}\SpecialCharTok{*}\NormalTok{X1 }\SpecialCharTok{+}\NormalTok{ beta[}\DecValTok{3}\NormalTok{]}\SpecialCharTok{*}\NormalTok{X1}\SpecialCharTok{\^{}}\DecValTok{2} \SpecialCharTok{+}\NormalTok{ beta[}\DecValTok{4}\NormalTok{]}\SpecialCharTok{*}\FunctionTok{exp}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{beta[}\DecValTok{5}\NormalTok{]}\SpecialCharTok{*}\NormalTok{X2)}
+\NormalTok{\}}
+
+\CommentTok{\# Objective function: RSS}
+\NormalTok{RSS }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(beta,Y,X) }\FunctionTok{sum}\NormalTok{((Y}\SpecialCharTok{{-}}\FunctionTok{f}\NormalTok{(beta,X))}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{)}
+
+\CommentTok{\# Gradient vector of the objective function}
+\CommentTok{\# RSS를 각 parameter마다 편미분}
+\NormalTok{grv }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(beta,Y,X)}
+\NormalTok{\{}
+\NormalTok{  X1 }\OtherTok{=}\NormalTok{ X[,}\DecValTok{1}\NormalTok{]; X2 }\OtherTok{=}\NormalTok{ X[,}\DecValTok{2}\NormalTok{]}
+\NormalTok{  R }\OtherTok{=}\NormalTok{ Y }\SpecialCharTok{{-}} \FunctionTok{f}\NormalTok{(beta,X)}
+  \FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{2}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R), }\SpecialCharTok{{-}}\DecValTok{2}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R}\SpecialCharTok{*}\NormalTok{X1), }\SpecialCharTok{{-}}\DecValTok{2}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R}\SpecialCharTok{*}\NormalTok{X1}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{), }\SpecialCharTok{{-}}\DecValTok{2}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R}\SpecialCharTok{*}\FunctionTok{exp}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{beta[}\DecValTok{5}\NormalTok{]}\SpecialCharTok{*}\NormalTok{X2)), }
+    \DecValTok{2}\SpecialCharTok{*}\NormalTok{beta[}\DecValTok{4}\NormalTok{]}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R}\SpecialCharTok{*}\NormalTok{X2}\SpecialCharTok{*}\FunctionTok{exp}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{beta[}\DecValTok{5}\NormalTok{]}\SpecialCharTok{*}\NormalTok{X2)))  }
+\NormalTok{\}}
+
+\CommentTok{\# Optimization}
+\NormalTok{X }\OtherTok{=} \FunctionTok{cbind}\NormalTok{(attenu}\SpecialCharTok{$}\NormalTok{mag,attenu}\SpecialCharTok{$}\NormalTok{dist)}
+\FunctionTok{colnames}\NormalTok{(X) }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}mag\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}dist\textquotesingle{}}\NormalTok{)}
+\NormalTok{Y }\OtherTok{=}\NormalTok{ attenu}\SpecialCharTok{$}\NormalTok{accel}
+\NormalTok{ml1 }\OtherTok{=} \FunctionTok{optim}\NormalTok{(}\AttributeTok{par =} \FunctionTok{rep}\NormalTok{(}\FloatTok{0.1}\NormalTok{,}\DecValTok{5}\NormalTok{), }\AttributeTok{fn =}\NormalTok{ RSS, }\AttributeTok{gr=}\NormalTok{grv, }\AttributeTok{method=}\StringTok{\textquotesingle{}BFGS\textquotesingle{}}\NormalTok{, }\AttributeTok{X=}\NormalTok{X, }\AttributeTok{Y=}\NormalTok{Y) }\CommentTok{\#  par = initial Beta\textquotesingle{}s, fn = optimize할 objective function, gr = gradient vector를 지정하는 함수. "BFGS" is a quasi{-}Newton method.}
+\CommentTok{\# gradient vector는 objective function을 각 parameter에 대해서 1차 미분을 한 것이다.  따로 지정 안해줘도 알아서 numerical하게 값을 찾아준다. 그러나 따로 gradient vector를 계산해서 넣어주면 더 잘 돌아간다. Hessian Matrix도 넣어주면 좋긴 하다. }
+\NormalTok{ml1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## $par
+## [1] -1.49610172  0.41779875 -0.02823150  0.45349508  0.04482179
+## 
+## $value
+## [1] 1.332736
+## 
+## $counts
+## function gradient 
+##      121       37 
+## 
+## $convergence
+## [1] 0
+## 
+## $message
+## NULL
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# ml1으로 새로운 beta coefficients들을 구하였으므로 이것에 대한 residual check 역시 해야 한다. }
+
+\NormalTok{beta.hat }\OtherTok{=}\NormalTok{ ml1}\SpecialCharTok{$}\NormalTok{par}
+\NormalTok{beta.hat}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] -1.49610172  0.41779875 -0.02823150  0.45349508  0.04482179
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Fitted value}
+\NormalTok{Yhat }\OtherTok{=} \FunctionTok{f}\NormalTok{(beta.hat,X)}
+
+\CommentTok{\# Residual plot}
+\NormalTok{r }\OtherTok{=}\NormalTok{ Y }\SpecialCharTok{{-}}\NormalTok{ Yhat}
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{,}\DecValTok{1}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(Yhat,r,}\AttributeTok{ylim=}\FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\FloatTok{0.5}\NormalTok{,}\FloatTok{0.5}\NormalTok{))}
+\FunctionTok{lines}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{10}\NormalTok{,}\DecValTok{10}\NormalTok{),}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{),}\AttributeTok{col=}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{SM_Example1_files/figure-latex/unnamed-chunk-1-3.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Mean pattern은 없어지는 것으로 나온다. }
+\CommentTok{\# Linearly increasing variance pattern.}
+\CommentTok{\#residual의 분산이 점점 커지는 패턴을 가짐을 확인할 수 있음. 등분산 X}
+\CommentTok{\# 이럴 경우 Linear Variance Function을 사용하는게 적절하다.}
+
+\DocumentationTok{\#\#\#\#\#\#\#\#\# Nonlinear model with nonconstant variance \#\#\#\#\#\#\#\#\#\#}
+
+\CommentTok{\# To check whether a matrix is singular or not}
+\CommentTok{\# install.packages(\textquotesingle{}matrixcalc\textquotesingle{}) }
+\FunctionTok{library}\NormalTok{(matrixcalc)}
+
+\CommentTok{\# Objective function for mean function: Genearalized least square method.}
+\NormalTok{obj.mean }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(beta,Y,X,S) }\FunctionTok{t}\NormalTok{(Y}\SpecialCharTok{{-}}\FunctionTok{f}\NormalTok{(beta,X)) }\SpecialCharTok{\%*\%} \FunctionTok{solve}\NormalTok{(S) }\SpecialCharTok{\%*\%}\NormalTok{ (Y}\SpecialCharTok{{-}}\FunctionTok{f}\NormalTok{(beta,X)) }\CommentTok{\# solve(S) = the inverse of S}
+\CommentTok{\# S: Covariance matrix}
+\CommentTok{\#5주차 1차시 52분 19초에 나오는 식을 구현한 것}
+
+\CommentTok{\# Gradient vector of the objective function}
+\NormalTok{gr.mean }\OtherTok{=} \ControlFlowTok{function}\NormalTok{(beta,Y,X,S)}
+\NormalTok{\{}
+\NormalTok{  sigma2 }\OtherTok{=} \FunctionTok{diag}\NormalTok{(S)}
+\NormalTok{  X1 }\OtherTok{=}\NormalTok{ X[,}\DecValTok{1}\NormalTok{]; X2 }\OtherTok{=}\NormalTok{ X[,}\DecValTok{2}\NormalTok{]}
+\NormalTok{  R }\OtherTok{=}\NormalTok{ Y }\SpecialCharTok{{-}} \FunctionTok{f}\NormalTok{(beta,X)}
+  \FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{2}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R}\SpecialCharTok{/}\NormalTok{sigma2), }\SpecialCharTok{{-}}\DecValTok{2}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R}\SpecialCharTok{*}\NormalTok{X1}\SpecialCharTok{/}\NormalTok{sigma2), }\SpecialCharTok{{-}}\DecValTok{2}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R}\SpecialCharTok{*}\NormalTok{X1}\SpecialCharTok{\^{}}\DecValTok{2}\SpecialCharTok{/}\NormalTok{sigma2), }
+    \SpecialCharTok{{-}}\DecValTok{2}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R}\SpecialCharTok{*}\FunctionTok{exp}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{beta[}\DecValTok{5}\NormalTok{]}\SpecialCharTok{*}\NormalTok{X2)}\SpecialCharTok{/}\NormalTok{sigma2), }
+    \DecValTok{2}\SpecialCharTok{*}\NormalTok{beta[}\DecValTok{4}\NormalTok{]}\SpecialCharTok{*}\FunctionTok{sum}\NormalTok{(R}\SpecialCharTok{*}\NormalTok{X2}\SpecialCharTok{*}\FunctionTok{exp}\NormalTok{(}\SpecialCharTok{{-}}\NormalTok{beta[}\DecValTok{5}\NormalTok{]}\SpecialCharTok{*}\NormalTok{X2)}\SpecialCharTok{/}\NormalTok{sigma2))  }
+\NormalTok{\}}
+
+\CommentTok{\# Linear variance function: |r| = gam1 + gam2*Yhat. 각 r이 variance{-}covariance matrix의 diagonal term이 된다. }
+\CommentTok{\# For linear variance function, we can consider absolute residuals,}
+\CommentTok{\# instead of squared residuals.}
+\CommentTok{\# gam.hat = (Z\^{}T W Z)\^{}({-}1) Z\^{}T W |r|.}
+
+\NormalTok{beta.new }\OtherTok{=}\NormalTok{ ml1}\SpecialCharTok{$}\NormalTok{par      }\CommentTok{\# initial parameter.}
+\NormalTok{W }\OtherTok{=} \FunctionTok{diag}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{,}\FunctionTok{length}\NormalTok{(Y))) }\CommentTok{\# W에 대한 정보는 따로 없으므로 등분산 가정 }
+\NormalTok{mdif }\OtherTok{=} \DecValTok{100000}
+
+\ControlFlowTok{while}\NormalTok{(mdif }\SpecialCharTok{\textgreater{}} \FloatTok{0.000001}\NormalTok{)}
+\NormalTok{\{}
+\NormalTok{  Yhat }\OtherTok{=} \FunctionTok{f}\NormalTok{(beta.new,X)}
+\NormalTok{  r }\OtherTok{=}\NormalTok{ Y }\SpecialCharTok{{-}}\NormalTok{ Yhat }\CommentTok{\#보통 squared residuals를 사용하는데 이 예제에서는 absolute residuals를 사용하였다. }
+\NormalTok{  Z }\OtherTok{=} \FunctionTok{cbind}\NormalTok{(}\DecValTok{1}\NormalTok{,Yhat)}
+\NormalTok{  gam.hat }\OtherTok{=} \FunctionTok{solve}\NormalTok{(}\FunctionTok{t}\NormalTok{(Z) }\SpecialCharTok{\%*\%}\NormalTok{ W }\SpecialCharTok{\%*\%}\NormalTok{ Z) }\SpecialCharTok{\%*\%} \FunctionTok{t}\NormalTok{(Z) }\SpecialCharTok{\%*\%}\NormalTok{ W }\SpecialCharTok{\%*\%} \FunctionTok{abs}\NormalTok{(r)}
+\NormalTok{  sigma }\OtherTok{=}\NormalTok{ Z }\SpecialCharTok{\%*\%}\NormalTok{ gam.hat}
+\NormalTok{  S }\OtherTok{=} \FunctionTok{diag}\NormalTok{(}\FunctionTok{as.vector}\NormalTok{(sigma}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{))}\CommentTok{\#objective mean function에 사용될 sigma}
+  
+  \ControlFlowTok{if}\NormalTok{ (}\FunctionTok{is.non.singular.matrix}\NormalTok{(S)) W }\OtherTok{=} \FunctionTok{solve}\NormalTok{(S)}
+  \ControlFlowTok{else}\NormalTok{ W }\OtherTok{=} \FunctionTok{solve}\NormalTok{(S }\SpecialCharTok{+} \FloatTok{0.000000001}\SpecialCharTok{*}\FunctionTok{diag}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{,}\FunctionTok{nrow}\NormalTok{(S)))) }\CommentTok{\#variance function구할 때의 weights}
+
+\NormalTok{  ml2 }\OtherTok{=} \FunctionTok{optim}\NormalTok{(beta.new, obj.mean, }\AttributeTok{gr=}\NormalTok{gr.mean,}\AttributeTok{method=}\StringTok{\textquotesingle{}BFGS\textquotesingle{}}\NormalTok{, }\AttributeTok{Y=}\NormalTok{Y, }\AttributeTok{X=}\NormalTok{X, }\AttributeTok{S=}\NormalTok{S)}
+\NormalTok{  beta.old }\OtherTok{=}\NormalTok{ beta.new}
+\NormalTok{  beta.new }\OtherTok{=}\NormalTok{ ml2}\SpecialCharTok{$}\NormalTok{par}
+\NormalTok{  mdif }\OtherTok{=} \FunctionTok{max}\NormalTok{(}\FunctionTok{abs}\NormalTok{(beta.new }\SpecialCharTok{{-}}\NormalTok{ beta.old))}
+\NormalTok{\}}
+
+\NormalTok{beta.new}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] -1.08510428  0.30750346 -0.02149807  0.33393746  0.02685590
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Yhat }\OtherTok{=} \FunctionTok{f}\NormalTok{(beta.new,X)}
+\NormalTok{sigma }\OtherTok{=}\NormalTok{ Z }\SpecialCharTok{\%*\%}\NormalTok{ gam.hat}
+\NormalTok{r }\OtherTok{=}\NormalTok{ (Y }\SpecialCharTok{{-}}\NormalTok{ Yhat)}\SpecialCharTok{/}\NormalTok{sigma}
+
+\CommentTok{\# Residual plot}
+\FunctionTok{plot}\NormalTok{(Yhat,r,}\AttributeTok{ylim=}\FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{4}\NormalTok{,}\DecValTok{4}\NormalTok{))}
+\FunctionTok{lines}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{10}\NormalTok{),}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{),}\AttributeTok{col=}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{)}
+\CommentTok{\#random error의 형태를 띔.}
+\CommentTok{\# 최종 모델은 이 variance function을 포함한 모델이다.}
+
+\DocumentationTok{\#\#\#\#\# Linear regression with nonconstant variance \#\#\#\#\#}
+\CommentTok{\# lmvar: }
+\CommentTok{\# Linear mean function}
+\CommentTok{\# Linear variance function: log(sigma) = X*beta}
+\CommentTok{\# install.packages(\textquotesingle{}lmvar\textquotesingle{})}
+\FunctionTok{library}\NormalTok{(lmvar)}
+
+\NormalTok{X\_s }\OtherTok{=} \FunctionTok{cbind}\NormalTok{(attenu}\SpecialCharTok{$}\NormalTok{mag, attenu}\SpecialCharTok{$}\NormalTok{dist)}
+\FunctionTok{colnames}\NormalTok{(X\_s) }\OtherTok{=} \FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}mag\textquotesingle{}}\NormalTok{, }\StringTok{\textquotesingle{}dist\textquotesingle{}}\NormalTok{)}
+\NormalTok{fit3 }\OtherTok{=} \FunctionTok{lmvar}\NormalTok{(attenu}\SpecialCharTok{$}\NormalTok{accel, X, X\_s)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{SM_Example1_files/figure-latex/unnamed-chunk-1-4.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(fit3)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Call: 
+##  lmvar(y = attenu$accel, X_mu = X, X_sigma = X_s)
+## 
+## Number of observations:  182 
+## Degrees of freedom    :  6 
+## 
+## Z-scores: 
+##     Min      1Q  Median      3Q     Max 
+## -2.4255  0.2383  0.6385  1.0469  2.5417 
+## 
+## Coefficients:
+##                  Estimate  Std. Error  z value  Pr(>|z|)    
+## (Intercept)    1.4106e-02  1.2999e-02   1.0852    0.2779    
+## mag            2.4043e-03  1.7962e-03   1.3386    0.1807    
+## dist          -7.6248e-05  6.6991e-06 -11.3819 < 2.2e-16 ***
+## (Intercept_s) -4.1948e+00  4.9252e-01  -8.5171 < 2.2e-16 ***
+## mag_s          4.7234e-01  8.3854e-02   5.6328 1.773e-08 ***
+## dist_s        -2.1555e-02  9.7305e-04 -22.1514 < 2.2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Standard deviations: 
+##    Min     1Q Median     3Q    Max 
+## 0.0002 0.0843 0.1310 0.2018 0.3213 
+## 
+## Comparison to model with constant variance (i.e. classical linear model)
+## Log likelihood-ratio: 37.74527 
+## Additional degrees of freedom: 2 
+## p-value for difference in deviance: 4.05e-17
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{ms }\OtherTok{=} \FunctionTok{predict}\NormalTok{(fit3, }\AttributeTok{X\_mu=}\NormalTok{X, }\AttributeTok{X\_sigma=}\NormalTok{X\_s)}
+\NormalTok{r1 }\OtherTok{=}\NormalTok{ (Y }\SpecialCharTok{{-}}\NormalTok{ ms[,}\DecValTok{1}\NormalTok{])}\SpecialCharTok{/}\NormalTok{ms[,}\DecValTok{2}\NormalTok{]}
+\FunctionTok{plot}\NormalTok{(ms[,}\DecValTok{1}\NormalTok{],r1)}
+\FunctionTok{lines}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{10}\NormalTok{,}\DecValTok{10}\NormalTok{),}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{),}\AttributeTok{col=}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{SM_Example1_files/figure-latex/unnamed-chunk-1-5.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#5주차 1차시 끝}
+\CommentTok{\#\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}\textasciitilde{}}
+
+
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+\CommentTok{\# Modelling Example 2:  Model with time correlations \#}
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+
+\NormalTok{tsdat }\OtherTok{=} \FunctionTok{read.table}\NormalTok{(}\StringTok{\textquotesingle{}tsdat.txt\textquotesingle{}}\NormalTok{,}\AttributeTok{header=}\NormalTok{T)}
+
+\NormalTok{fit }\OtherTok{=} \FunctionTok{lm}\NormalTok{(y }\SpecialCharTok{\textasciitilde{}}\NormalTok{ x, }\AttributeTok{data=}\NormalTok{tsdat)}
+\FunctionTok{summary}\NormalTok{(fit)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = y ~ x, data = tsdat)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -61.998 -16.403   2.365  12.663  57.931 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) 3.600e+04  7.152e+01 503.377  < 2e-16 ***
+## x           1.610e+00  2.023e-01   7.957 1.56e-11 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 25.83 on 74 degrees of freedom
+## Multiple R-squared:  0.4611, Adjusted R-squared:  0.4538 
+## F-statistic: 63.31 on 1 and 74 DF,  p-value: 1.565e-11
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{par}\NormalTok{(}\AttributeTok{mfrow=}\FunctionTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{2}\NormalTok{))}
+\FunctionTok{plot}\NormalTok{(fit)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{SM_Example1_files/figure-latex/unnamed-chunk-1-6.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 등분산, normality를 만족하는 것으로 보인다. }
+\CommentTok{\#하지만 time series이기 때문에 linear test를 해봐야 한다. Durbin{-}Watson Test}
+
+\CommentTok{\# Durbin{-}Watson test}
+\CommentTok{\# install.packages(\textquotesingle{}lmtest\textquotesingle{})}
+\FunctionTok{library}\NormalTok{(lmtest)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: zoo
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'zoo'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     as.Date, as.Date.numeric
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{dwtest}\NormalTok{(fit) }\CommentTok{\# time correlation이 있음이 명확하다. }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+##  Durbin-Watson test
+## 
+## data:  fit
+## DW = 0.69523, p-value = 4.72e-11
+## alternative hypothesis: true autocorrelation is greater than 0
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Check ACF \& PACF}
+\CommentTok{\# install.packages(\textquotesingle{}astsa\textquotesingle{})}
+\FunctionTok{library}\NormalTok{(astsa)}
+
+\CommentTok{\# AR(p): ACF: Exponentially decreasing; PACF: Non{-}zero values at first p lags.}
+\CommentTok{\# MA(q): ACF: Non{-}zero values at first q lags; PACF: Exponentially decreasing.}
+\CommentTok{\# ARMA(p,q): ACF: Similar to ACF of AR(p); PACF: Similar to PACF of MA(q).}
+
+\FunctionTok{acf2}\NormalTok{(}\FunctionTok{residuals}\NormalTok{(fit)) }\CommentTok{\# acf는 exponentially decreasing하다는 것을 알 수 있고, pacf는 1 이후로 correlation이 0에 가깝다는 것을 알 수 있다. }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{SM_Example1_files/figure-latex/unnamed-chunk-1-7.pdf}
+
+\begin{verbatim}
+##      [,1]  [,2]  [,3]  [,4]  [,5]  [,6]  [,7]  [,8] [,9] [,10] [,11] [,12]
+## ACF  0.64  0.36  0.08 -0.07 -0.12 -0.11 -0.11 -0.04 0.04  0.02 -0.05 -0.08
+## PACF 0.64 -0.07 -0.20 -0.02  0.00 -0.01 -0.06  0.06 0.09 -0.13 -0.12  0.05
+##      [,13] [,14] [,15] [,16] [,17] [,18] [,19]
+## ACF  -0.09  -0.1 -0.03 -0.01  0.04  0.12  0.10
+## PACF  0.02  -0.1  0.09 -0.01  0.02  0.10 -0.08
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# lag = 1 이면 어지간한 time correlation을 잡을 수 있겠다는 추정이 가능 =\textgreater{} AR(1)모델 사용}
+
+\NormalTok{ar1 }\OtherTok{=} \FunctionTok{sarima}\NormalTok{ (}\FunctionTok{residuals}\NormalTok{(fit), }\AttributeTok{p =} \DecValTok{1}\NormalTok{,}\AttributeTok{d =} \DecValTok{0}\NormalTok{,}\AttributeTok{q =} \DecValTok{0}\NormalTok{, }\AttributeTok{no.constant=}\NormalTok{T)   }\CommentTok{\#AR(1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## initial  value 3.229004 
+## iter   2 value 2.958676
+## iter   3 value 2.958511
+## iter   4 value 2.958366
+## iter   4 value 2.958366
+## final  value 2.958366 
+## converged
+## initial  value 2.971232 
+## iter   2 value 2.971136
+## iter   3 value 2.971118
+## iter   3 value 2.971118
+## iter   3 value 2.971118
+## final  value 2.971118 
+## converged
+\end{verbatim}
+
+\includegraphics{SM_Example1_files/figure-latex/unnamed-chunk-1-8.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# p = AR의 차수, q = MA의 차수, no.constant = T : mean = 0 가정, d는 어차피 시험에 나오지도 않을거임}
+\NormalTok{ar1}\SpecialCharTok{$}\NormalTok{fit  }\CommentTok{\#time dependency가 사라짐. }
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## arima(x = xdata, order = c(p, d, q), seasonal = list(order = c(P, D, Q), period = S), 
+##     xreg = xmean, include.mean = FALSE, transform.pars = trans, fixed = fixed, 
+##     optim.control = list(trace = trc, REPORT = 1, reltol = tol))
+## 
+## Coefficients:
+##          ar1
+##       0.6488
+## s.e.  0.0875
+## 
+## sigma^2 estimated as 378.1:  log likelihood = -333.64,  aic = 671.29
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# 그럼 이걸 이용해서 어떻게 beta를 추정할 것인가의 문제를 풀면 된다. }
+
+
+\CommentTok{\# MLE: Multivariate normal distribution}
+\NormalTok{X }\OtherTok{=} \FunctionTok{cbind}\NormalTok{(}\DecValTok{1}\NormalTok{,tsdat}\SpecialCharTok{$}\NormalTok{x)}
+\NormalTok{Y }\OtherTok{=}\NormalTok{ tsdat}\SpecialCharTok{$}\NormalTok{y}
+\NormalTok{n }\OtherTok{=} \FunctionTok{length}\NormalTok{(Y)}
+\NormalTok{S }\OtherTok{=} \FunctionTok{diag}\NormalTok{(}\FunctionTok{rep}\NormalTok{(}\DecValTok{1}\NormalTok{,n))    }\CommentTok{\# initial covariance matrix}
+
+\NormalTok{mdif }\OtherTok{=} \DecValTok{1000000}
+\NormalTok{beta.old }\OtherTok{=} \FunctionTok{rep}\NormalTok{(}\DecValTok{100000}\NormalTok{,}\DecValTok{2}\NormalTok{) }\CommentTok{\# Y의 scale에 따라 Y보다는 어느 정도 크게 잡아야 하는 것 같다. }
+
+\ControlFlowTok{while}\NormalTok{(mdif }\SpecialCharTok{\textgreater{}} \FloatTok{0.0000001}\NormalTok{)}
+\NormalTok{\{}
+\NormalTok{  beta.new }\OtherTok{=} \FunctionTok{as.vector}\NormalTok{(}\FunctionTok{solve}\NormalTok{(}\FunctionTok{t}\NormalTok{(X) }\SpecialCharTok{\%*\%} \FunctionTok{solve}\NormalTok{(S) }\SpecialCharTok{\%*\%}\NormalTok{ X) }\SpecialCharTok{\%*\%}\FunctionTok{t}\NormalTok{(X) }\SpecialCharTok{\%*\%} \FunctionTok{solve}\NormalTok{(S) }\SpecialCharTok{\%*\%}\NormalTok{ Y) }\CommentTok{\# Weighted Least Squares }
+\NormalTok{  r }\OtherTok{=} \FunctionTok{as.vector}\NormalTok{(Y }\SpecialCharTok{{-}}\NormalTok{ (X }\SpecialCharTok{\%*\%}\NormalTok{ beta.new))}
+\NormalTok{  ar1 }\OtherTok{=} \FunctionTok{sarima}\NormalTok{ (r, }\DecValTok{1}\NormalTok{,}\DecValTok{0}\NormalTok{,}\DecValTok{0}\NormalTok{, }\AttributeTok{no.constant=}\NormalTok{T, }\AttributeTok{details=}\NormalTok{F)}
+\NormalTok{  alpha }\OtherTok{=}\NormalTok{ ar1}\SpecialCharTok{$}\NormalTok{fit}\SpecialCharTok{$}\NormalTok{coef }\CommentTok{\# AR(1)모델의 coefficient}
+\NormalTok{  sigma2 }\OtherTok{=}\NormalTok{ ar1}\SpecialCharTok{$}\NormalTok{fit}\SpecialCharTok{$}\NormalTok{sigma2 }\CommentTok{\# AR(1)모델의 sigma squared}
+  
+\NormalTok{  mdif }\OtherTok{=} \FunctionTok{max}\NormalTok{(}\FunctionTok{abs}\NormalTok{(beta.new }\SpecialCharTok{{-}}\NormalTok{ beta.old))}
+\NormalTok{  beta.old }\OtherTok{=}\NormalTok{ beta.new}
+  \CommentTok{\# Construct covariance matrix}
+\NormalTok{  S }\OtherTok{=} \FunctionTok{matrix}\NormalTok{(}\AttributeTok{nrow=}\NormalTok{n,}\AttributeTok{ncol=}\NormalTok{n)}
+  \ControlFlowTok{for}\NormalTok{ (i }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{n)}
+\NormalTok{  \{}
+    \ControlFlowTok{for}\NormalTok{ (j }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\NormalTok{n)}
+\NormalTok{    \{}
+      \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{==}\NormalTok{ j) S[i,j] }\OtherTok{=} \DecValTok{1}
+      \ControlFlowTok{if}\NormalTok{ (i }\SpecialCharTok{!=}\NormalTok{ j) S[i,j] }\OtherTok{=}\NormalTok{ alpha}\SpecialCharTok{\^{}}\NormalTok{(}\FunctionTok{abs}\NormalTok{(i}\SpecialCharTok{{-}}\NormalTok{j))}
+\NormalTok{    \}}
+\NormalTok{  \}}
+\NormalTok{  S }\OtherTok{=}\NormalTok{ (sigma2 }\SpecialCharTok{/}\NormalTok{ (}\DecValTok{1}\SpecialCharTok{{-}}\NormalTok{alpha}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{)) }\SpecialCharTok{*}\NormalTok{ S }\CommentTok{\# updating covariance matrix}
+\NormalTok{\}}
+
+\FunctionTok{round}\NormalTok{(beta.new,}\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 35986.2865     1.6521
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# MLE: Product of conditional distribution (Approximation)}
+\CommentTok{\# Y\_t | Y\_t{-}1 \textasciitilde{} N(X\_t*beta + alpha*epsilon\_t{-}1, sigma\^{}2)}
+
+\NormalTok{fit }\OtherTok{=} \FunctionTok{lm}\NormalTok{(y }\SpecialCharTok{\textasciitilde{}}\NormalTok{ x, }\AttributeTok{data=}\NormalTok{tsdat)}
+
+\NormalTok{Yt }\OtherTok{=}\NormalTok{ tsdat}\SpecialCharTok{$}\NormalTok{y[}\DecValTok{2}\SpecialCharTok{:}\NormalTok{n]}
+\NormalTok{Xt }\OtherTok{=}\NormalTok{ tsdat}\SpecialCharTok{$}\NormalTok{x[}\DecValTok{2}\SpecialCharTok{:}\NormalTok{n]}
+\NormalTok{et }\OtherTok{=} \FunctionTok{residuals}\NormalTok{(fit)[}\DecValTok{1}\SpecialCharTok{:}\NormalTok{(n}\DecValTok{{-}1}\NormalTok{)] }\CommentTok{\# Y\_t | Y\_t{-}1 \textasciitilde{} N(X\_t*beta + alpha*epsilon\_t{-}1, sigma\^{}2)이니까 n{-}1까지 }
+\NormalTok{mdif }\OtherTok{=} \DecValTok{10000}
+\NormalTok{b.old }\OtherTok{=} \FunctionTok{rep}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{3}\NormalTok{)}
+ 
+\ControlFlowTok{while}\NormalTok{(mdif }\SpecialCharTok{\textgreater{}} \FloatTok{0.0000001}\NormalTok{)}
+\NormalTok{\{}
+\NormalTok{  fit.temp }\OtherTok{=} \FunctionTok{lm}\NormalTok{(Yt }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Xt }\SpecialCharTok{+}\NormalTok{ et)}
+\NormalTok{  b.new }\OtherTok{=}\NormalTok{ fit.temp}\SpecialCharTok{$}\NormalTok{coefficient}
+\NormalTok{  mdif }\OtherTok{=} \FunctionTok{max}\NormalTok{(}\FunctionTok{abs}\NormalTok{(b.new[}\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{] }\SpecialCharTok{{-}}\NormalTok{ b.old[}\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{]))}
+  
+\NormalTok{  et }\OtherTok{=}\NormalTok{ (Y }\SpecialCharTok{{-}}\NormalTok{ X }\SpecialCharTok{\%*\%}\NormalTok{ b.new[}\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{])[}\DecValTok{1}\SpecialCharTok{:}\NormalTok{(n}\DecValTok{{-}1}\NormalTok{)]}
+\NormalTok{  b.old }\OtherTok{=}\NormalTok{ b.new}
+\NormalTok{\}}
+
+\FunctionTok{round}\NormalTok{(b.new,}\DecValTok{4}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## (Intercept)          Xt          et 
+##  35999.7941      1.6205      0.6379
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Built{-}in function }
+\CommentTok{\# cochrane.orcutt =\textgreater{} f: linear model, error: AR(p) process.}
+\CommentTok{\# install.packages("orcutt")}
+\FunctionTok{library}\NormalTok{(orcutt)}
+
+\NormalTok{fit }\OtherTok{=} \FunctionTok{lm}\NormalTok{(y }\SpecialCharTok{\textasciitilde{}}\NormalTok{ x, }\AttributeTok{data=}\NormalTok{tsdat)}
+\FunctionTok{cochrane.orcutt}\NormalTok{(fit)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Cochrane-orcutt estimation for first order autocorrelation 
+##  
+## Call:
+## lm(formula = y ~ x, data = tsdat)
+## 
+##  number of interaction: 4
+##  rho 0.63843
+## 
+## Durbin-Watson statistic 
+## (original):    0.69523 , p-value: 4.72e-11
+## (transformed): 1.83115 , p-value: 2.515e-01
+##  
+##  coefficients: 
+##  (Intercept)            x 
+## 35994.746022     1.634731
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+\CommentTok{\# Modelling Example 3:  Model with spatial correlations \#}
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+
+\CommentTok{\# install.packages(\textquotesingle{}spdep\textquotesingle{})}
+\FunctionTok{library}\NormalTok{(spdep)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: sp
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: spData
+\end{verbatim}
+
+\begin{verbatim}
+## To access larger datasets in this package, install the spDataLarge
+## package with: `install.packages('spDataLarge',
+## repos='https://nowosad.github.io/drat/', type='source')`
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: sf
+\end{verbatim}
+
+\begin{verbatim}
+## Linking to GEOS 3.9.1, GDAL 3.2.3, PROJ 7.2.1
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{data}\NormalTok{(oldcol)}
+
+\NormalTok{?COL.OLD}
+\CommentTok{\# \textquotesingle{}COL.nb\textquotesingle{} has the neighbors list.}
+
+\CommentTok{\# 2{-}D Coordinates of observations}
+\NormalTok{crds }\OtherTok{=} \FunctionTok{cbind}\NormalTok{(COL.OLD}\SpecialCharTok{$}\NormalTok{X, COL.OLD}\SpecialCharTok{$}\NormalTok{Y)  }
+
+\CommentTok{\# Compute the maximum distance }
+\NormalTok{mdist }\OtherTok{=} \FunctionTok{sqrt}\NormalTok{(}\FunctionTok{sum}\NormalTok{(}\FunctionTok{diff}\NormalTok{(}\FunctionTok{apply}\NormalTok{(crds, }\DecValTok{2}\NormalTok{, range))}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{))   }
+
+\CommentTok{\# All obs. between 0 and mdist are identified as neighborhoods.}
+\NormalTok{dnb }\OtherTok{=} \FunctionTok{dnearneigh}\NormalTok{(crds, }\DecValTok{0}\NormalTok{, mdist)}
+
+\CommentTok{\# Compute Euclidean distance between obs.}
+\NormalTok{dists }\OtherTok{=} \FunctionTok{nbdists}\NormalTok{(dnb, crds)}
+
+\CommentTok{\# Compute Power distance weight d\^{}({-}2)}
+\NormalTok{glst }\OtherTok{=} \FunctionTok{lapply}\NormalTok{(dists, }\ControlFlowTok{function}\NormalTok{(d) d}\SpecialCharTok{\^{}}\NormalTok{(}\SpecialCharTok{{-}}\DecValTok{2}\NormalTok{))}
+
+\CommentTok{\# Construct weight matrix with normalization }
+\CommentTok{\# style=\textquotesingle{}C\textquotesingle{}: global normalization; \textquotesingle{}W\textquotesingle{}: row normalization}
+\NormalTok{lw }\OtherTok{=} \FunctionTok{nb2listw}\NormalTok{(dnb, }\AttributeTok{glist=}\NormalTok{glst, }\AttributeTok{style=}\StringTok{\textquotesingle{}C\textquotesingle{}}\NormalTok{)}
+
+\CommentTok{\# Spatial Autoregressive Model}
+\NormalTok{fit }\OtherTok{=} \FunctionTok{lagsarlm}\NormalTok{(CRIME }\SpecialCharTok{\textasciitilde{}}\NormalTok{ HOVAL }\SpecialCharTok{+}\NormalTok{ INC, }\AttributeTok{data=}\NormalTok{COL.OLD, }\AttributeTok{listw=}\NormalTok{lw) }\CommentTok{\#listw : normalized weight matrix를 넣는 곳인 것 같은데}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in lagsarlm(CRIME ~ HOVAL + INC, data = COL.OLD, listw = lw): install
+## the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: Function jacobianSetup moved to the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+
+## Warning: Function do_ldet moved to the spatialreg package
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(fit)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in summary.sarlm(fit): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in Wald1.sarlm(object): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in logLik.sarlm(object): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in residuals.sarlm(object): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in LR1.sarlm(object): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in logLik.sarlm(object): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in residuals.sarlm(object): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in print.summary.sarlm(x): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Call:lagsarlm(formula = CRIME ~ HOVAL + INC, data = COL.OLD, listw = lw)
+## 
+## Residuals:
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in residuals.sarlm(x): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+##       Min        1Q    Median        3Q       Max 
+## -25.93357  -4.98320  -0.50733   4.96160  25.17053 
+## 
+## Type: lag 
+## Coefficients: (asymptotic standard errors) 
+##             Estimate Std. Error z value  Pr(>|z|)
+## (Intercept) 46.04321    5.01268  9.1853 < 2.2e-16
+## HOVAL       -0.23848    0.07684 -3.1036  0.001912
+## INC         -0.85776    0.27588 -3.1092  0.001876
+## 
+## Rho: 0.24802, LR test value: 25.318, p-value: 4.8614e-07
+## Asymptotic standard error: 0.038854
+##     z-value: 6.3834, p-value: 1.7316e-10
+## Wald statistic: 40.748, p-value: 1.7316e-10
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in logLik.sarlm(x): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in residuals.sarlm(object): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Log likelihood: -174.7182 for lag model
+## ML residual variance (sigma squared): 72.254, (sigma: 8.5002)
+## Number of observations: 49 
+## Number of parameters estimated: 5
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in logLik.sarlm(object): install the spatialreg package
+
+## Warning in logLik.sarlm(object): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## AIC: 359.44, (AIC for lm: 382.75)
+## LM test for residual autocorrelation
+## test value: 3.0704, p-value: 0.079732
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#ƒ}
+\CommentTok{\# install.packages(\textquotesingle{}spatialreg\textquotesingle{})}
+\FunctionTok{library}\NormalTok{(spatialreg)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Loading required package: Matrix
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'spatialreg'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:spdep':
+## 
+##     as_dgRMatrix_listw, as_dsCMatrix_I, as_dsCMatrix_IrW,
+##     as_dsTMatrix_listw, as.spam.listw, can.be.simmed, cheb_setup,
+##     create_WX, do_ldet, eigen_pre_setup, eigen_setup, eigenw,
+##     errorsarlm, get.ClusterOption, get.coresOption, get.mcOption,
+##     get.VerboseOption, get.ZeroPolicyOption, GMargminImage, GMerrorsar,
+##     griffith_sone, gstsls, Hausman.test, impacts, intImpacts,
+##     Jacobian_W, jacobianSetup, l_max, lagmess, lagsarlm, lextrB,
+##     lextrS, lextrW, lmSLX, LU_prepermutate_setup, LU_setup,
+##     Matrix_J_setup, Matrix_setup, mcdet_setup, MCMCsamp, ME, mom_calc,
+##     mom_calc_int2, moments_setup, powerWeights, sacsarlm,
+##     SE_classic_setup, SE_interp_setup, SE_whichMin_setup,
+##     set.ClusterOption, set.coresOption, set.mcOption,
+##     set.VerboseOption, set.ZeroPolicyOption, similar.listw, spam_setup,
+##     spam_update_setup, SpatialFiltering, spautolm, spBreg_err,
+##     spBreg_lag, spBreg_sac, stsls, subgraph_eigenw, trW
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Fitted values}
+\FunctionTok{predict}\NormalTok{(fit)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in predict.sarlm(fit): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in fitted.sarlm(object): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in print.sarlm.pred(x): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in as.data.frame.sarlm.pred(x): install the spatialreg package
+\end{verbatim}
+
+\begin{verbatim}
+##            fit       trend    signal
+## 1001 21.139363 17.20296170  3.936402
+## 1002 40.669968 34.28553076  6.384437
+## 1003 36.930992 27.46526296  9.465729
+## 1004 26.111841 20.91954551  5.192295
+## 1005 12.853113 10.10064078  2.752472
+## 1006 30.589972 26.07286878  4.517103
+## 1007 38.576178 30.85302139  7.723156
+## 1008 29.365348 25.43790510  3.927443
+## 1009 47.328746 33.28192310 14.046823
+## 1010 15.294461 11.39006196  3.904399
+## 1011 31.907171 27.68239491  4.224776
+## 1012 20.555831 16.51398582  4.041845
+## 1013 23.612790 20.18482280  3.427967
+## 1014 19.858166 16.95497060  2.903196
+## 1015 21.665400 19.65330644  2.012094
+## 1016  9.351186  5.67989040  3.671296
+## 1017  6.191663  0.01215488  6.179508
+## 1018 24.995203 18.41466270  6.580541
+## 1019 38.688243 28.73801845  9.950225
+## 1020 48.187784 34.26709989 13.920684
+## 1021 40.752897 28.62840730 12.124490
+## 1022 46.378557 31.90784522 14.470712
+## 1023 40.556323 28.61294299 11.943380
+## 1024 44.986360 31.10259763 13.883762
+## 1025 32.462009 23.50569891  8.956310
+## 1026 27.159847 21.38320752  5.776639
+## 1027 38.591980 29.51925768  9.072722
+## 1028 33.964208 27.30503607  6.659172
+## 1029 41.812923 28.43747184 13.375451
+## 1030 33.494142 21.12057693 12.373565
+## 1031 48.738583 33.85540719 14.883176
+## 1032 49.977939 34.51692950 15.461009
+## 1033 48.587360 30.84643849 17.740921
+## 1034 43.721512 28.74942043 14.972091
+## 1035 34.260331 21.14507441 13.115257
+## 1036 54.095323 35.01938745 19.075935
+## 1037 65.956366 32.67870610 33.277660
+## 1038 61.996250 34.94028272 27.055968
+## 1039 55.430501 27.90790108 27.522600
+## 1040 57.398367 27.26661378 30.131753
+## 1041 58.046396 28.78030320 29.266092
+## 1042 46.695348 20.42492885 26.270419
+## 1043 37.606926 32.14015929  5.466767
+## 1044 29.641722 26.43668716  3.205035
+## 1045 26.839825 23.92912443  2.910701
+## 1046 24.510130 21.31286074  3.197269
+## 1047 22.888676 20.75061674  2.138059
+## 1048 14.657706 12.17739523  2.480311
+## 1049 16.230448 13.27789783  2.952550
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+\CommentTok{\# Modelling Example 4:  Generalized Linear Models \#}
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#}
+
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\# Cumulative logit model \#\#\#\#\#\#\#\#\#\#}
+\CommentTok{\# install.packages(\textquotesingle{}ordinal\textquotesingle{})}
+\FunctionTok{library}\NormalTok{(ordinal)}
+
+\NormalTok{?wine}
+
+\NormalTok{?clm}
+
+\NormalTok{fit }\OtherTok{=} \FunctionTok{clm}\NormalTok{(rating }\SpecialCharTok{\textasciitilde{}}\NormalTok{ temp }\SpecialCharTok{+}\NormalTok{ contact, }\AttributeTok{data=}\NormalTok{wine, }\AttributeTok{link =} \StringTok{\textquotesingle{}logit\textquotesingle{}}\NormalTok{)}
+\FunctionTok{summary}\NormalTok{(fit)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## formula: rating ~ temp + contact
+## data:    wine
+## 
+##  link  threshold nobs logLik AIC    niter max.grad cond.H 
+##  logit flexible  72   -86.49 184.98 6(0)  4.01e-12 2.7e+01
+## 
+## Coefficients:
+##            Estimate Std. Error z value Pr(>|z|)    
+## tempwarm     2.5031     0.5287   4.735 2.19e-06 ***
+## contactyes   1.5278     0.4766   3.205  0.00135 ** 
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Threshold coefficients:
+##     Estimate Std. Error z value
+## 1|2  -1.3444     0.5171  -2.600
+## 2|3   1.2508     0.4379   2.857
+## 3|4   3.4669     0.5978   5.800
+## 4|5   5.0064     0.7309   6.850
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\# Poisson regression model \#\#\#\#\#\#\#\#\#\#}
+
+\CommentTok{\# For data}
+\CommentTok{\# install.packages(\textquotesingle{}lme4\textquotesingle{})}
+\FunctionTok{library}\NormalTok{(lme4)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Attaching package: 'lme4'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:ordinal':
+## 
+##     ranef, VarCorr
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{data}\NormalTok{(grouseticks)}
+
+\NormalTok{?grouseticks}
+
+\FunctionTok{head}\NormalTok{(grouseticks)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   INDEX TICKS BROOD HEIGHT YEAR LOCATION   cHEIGHT
+## 1     1     0   501    465   95       32  2.759305
+## 2     2     0   501    465   95       32  2.759305
+## 3     3     0   502    472   95       36  9.759305
+## 4     4     0   503    475   95       37 12.759305
+## 5     5     0   503    475   95       37 12.759305
+## 6     6     3   503    475   95       37 12.759305
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{hist}\NormalTok{(grouseticks}\SpecialCharTok{$}\NormalTok{TICKS,}\AttributeTok{breaks=}\DecValTok{0}\SpecialCharTok{:}\DecValTok{90}\NormalTok{)}
+
+\NormalTok{fit }\OtherTok{=} \FunctionTok{glm}\NormalTok{(TICKS }\SpecialCharTok{\textasciitilde{}}\NormalTok{ HEIGHT}\SpecialCharTok{*}\NormalTok{YEAR, }\AttributeTok{data =}\NormalTok{ grouseticks, }\AttributeTok{family=}\NormalTok{poisson)}
+\FunctionTok{summary}\NormalTok{(fit)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## glm(formula = TICKS ~ HEIGHT * YEAR, family = poisson, data = grouseticks)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -6.0993  -1.7956  -0.8414   0.6453  14.1356  
+## 
+## Coefficients:
+##                 Estimate Std. Error z value Pr(>|z|)    
+## (Intercept)    27.454732   1.084156   25.32   <2e-16 ***
+## HEIGHT         -0.058198   0.002539  -22.92   <2e-16 ***
+## YEAR96        -18.994362   1.140285  -16.66   <2e-16 ***
+## YEAR97        -19.247450   1.565774  -12.29   <2e-16 ***
+## HEIGHT:YEAR96   0.044693   0.002662   16.79   <2e-16 ***
+## HEIGHT:YEAR97   0.040453   0.003590   11.27   <2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for poisson family taken to be 1)
+## 
+##     Null deviance: 5847.5  on 402  degrees of freedom
+## Residual deviance: 3009.0  on 397  degrees of freedom
+## AIC: 3952
+## 
+## Number of Fisher Scoring iterations: 6
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\# Negative binomial regression model \#\#\#\#\#\#\#\#\#\#}
+\FunctionTok{library}\NormalTok{(MASS)}
+
+\NormalTok{fit1 }\OtherTok{=} \FunctionTok{glm.nb}\NormalTok{(TICKS }\SpecialCharTok{\textasciitilde{}}\NormalTok{ HEIGHT}\SpecialCharTok{*}\NormalTok{YEAR, }\AttributeTok{data =}\NormalTok{ grouseticks, }\AttributeTok{link=}\NormalTok{log)}
+\FunctionTok{summary}\NormalTok{(fit1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## glm.nb(formula = TICKS ~ HEIGHT * YEAR, data = grouseticks, link = log, 
+##     init.theta = 0.9000852793)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -2.3765  -1.0281  -0.5052   0.2408   3.2440  
+## 
+## Coefficients:
+##                 Estimate Std. Error z value Pr(>|z|)    
+## (Intercept)    20.030124   1.827525  10.960  < 2e-16 ***
+## HEIGHT         -0.041308   0.004033 -10.242  < 2e-16 ***
+## YEAR96        -10.820259   2.188634  -4.944 7.66e-07 ***
+## YEAR97        -10.599427   2.527652  -4.193 2.75e-05 ***
+## HEIGHT:YEAR96   0.026132   0.004824   5.418 6.04e-08 ***
+## HEIGHT:YEAR97   0.020861   0.005571   3.745 0.000181 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## (Dispersion parameter for Negative Binomial(0.9001) family taken to be 1)
+## 
+##     Null deviance: 840.71  on 402  degrees of freedom
+## Residual deviance: 418.82  on 397  degrees of freedom
+## AIC: 1912.6
+## 
+## Number of Fisher Scoring iterations: 1
+## 
+## 
+##               Theta:  0.9001 
+##           Std. Err.:  0.0867 
+## 
+##  2 x log-likelihood:  -1898.5880
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DocumentationTok{\#\#\#\#\#\#\#\#\#\# Proportional hazard model \#\#\#\#\#\#\#\#\#\#}
+\FunctionTok{library}\NormalTok{(survival)}
+
+\CommentTok{\# For data}
+\CommentTok{\# install.packages(\textquotesingle{}carData\textquotesingle{})}
+\FunctionTok{library}\NormalTok{(carData)}
+
+\NormalTok{?Rossi}
+
+\FunctionTok{Surv}\NormalTok{(Rossi}\SpecialCharTok{$}\NormalTok{week, Rossi}\SpecialCharTok{$}\NormalTok{arrest)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   [1] 20  17  25  52+ 52+ 52+ 23  52+ 52+ 52+ 52+ 52+ 37  52+ 25  46  28  52+
+##  [19] 52+ 52+ 52+ 52+ 24  52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 50 
+##  [37] 52+ 52+ 52+ 52+ 52+ 52+ 10  52+ 52+ 52+ 52+ 20  52+ 52+ 52+ 52+ 52+ 50 
+##  [55] 52+ 52+ 52+ 52+ 52+ 52+  6  52+ 52+ 52+ 52  52+ 52+ 52+ 49  52+ 52+ 52+
+##  [73] 52+ 52+ 52+ 52+ 43  52+ 52+  5  27  52+ 52+ 52+ 22  52+ 52+ 18  52+ 52+
+##  [91] 52+ 52+ 52+ 52+ 52+ 24  52+ 52+ 52+ 52+  2  26  52+ 49  52+ 21  48  52+
+## [109] 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+  8  52+ 52+ 49  52+ 52+ 52+ 52+
+## [127] 52+ 52+ 52+ 52+  8  52+ 52+ 13  52+ 52+ 52+ 52+  8  52+ 33  52+ 52+ 11 
+## [145] 52+ 52+ 52+ 52+ 52+ 37  52+ 52+ 52+ 44  52+ 52  52+ 52+ 52+ 52+ 52+ 52+
+## [163] 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+  9  17  52+ 52+ 52+ 52+ 52+ 52+
+## [181] 16  52+ 52+  3  52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 45  52+ 52+ 52+
+## [199] 52+ 52+ 52+ 28  52+ 16  15  52+ 52+ 52+ 52+ 14  52+ 52+ 52+ 52+ 52+ 52+
+## [217] 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+  7  52+ 52+ 43  46  40  52+ 14  52+
+## [235] 52+  8  52+ 52+ 52+ 52+ 52+ 25  52+ 52+ 17  37  52+ 52+ 52+ 32  52+ 52+
+## [253] 52+ 52+ 52+ 52+ 52+ 52+ 12  52+ 18  52+ 52+ 14  52+ 52+ 52+ 52+ 38  52+
+## [271] 24  20  32  52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 52+ 31  20  40  52+
+## [289] 52+ 52+ 52+ 42  52+ 26  52+ 52+ 52+ 52+ 52+ 47  52+ 52+ 40  52+ 52+ 52+
+## [307] 52+ 21  52+ 52+ 52+ 52+ 52+  1  43  24  11  52+ 52+ 52+ 52+ 33  52+ 46 
+## [325] 36  52+ 52+ 18  52+ 52+ 50  52+ 34  52+ 35  52+ 52+ 39   9  52+ 52+ 52+
+## [343] 34  52+ 52+ 52+ 44  52+ 52+ 35  30  39  52+ 52+ 52+ 52+ 19  52+ 43  52+
+## [361] 48  37  20  52+ 52+ 36  52+ 52+ 52+ 52+ 52+ 52+ 52+ 30  52+ 52+ 52+ 52+
+## [379] 52+ 52+ 52+ 52+ 42  52+ 52+ 52+ 52+ 26  40  52+ 52+ 52+ 35  52+ 46  52+
+## [397] 49  52+ 52+ 49  52+ 52+ 52+ 52+ 52+ 35  52+ 52+ 52+ 52+ 27  52+ 52+ 52+
+## [415] 52  45   4  52  36  52+ 52+  8  15  52+ 19  52+ 12  52+ 52+ 52+ 52+ 52+
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{fit }\OtherTok{=} \FunctionTok{coxph}\NormalTok{(}\FunctionTok{Surv}\NormalTok{(week,arrest) }\SpecialCharTok{\textasciitilde{}}\NormalTok{ fin }\SpecialCharTok{+}\NormalTok{ age}\SpecialCharTok{+}\NormalTok{ race }\SpecialCharTok{+}\NormalTok{ wexp }\SpecialCharTok{+}\NormalTok{ mar }\SpecialCharTok{+}\NormalTok{ prio, }
+            \AttributeTok{data=}\NormalTok{Rossi)}
+\FunctionTok{summary}\NormalTok{(fit)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Call:
+## coxph(formula = Surv(week, arrest) ~ fin + age + race + wexp + 
+##     mar + prio, data = Rossi)
+## 
+##   n= 432, number of events= 114 
+## 
+##                    coef exp(coef) se(coef)      z Pr(>|z|)    
+## finyes         -0.37352   0.68831  0.19082 -1.957 0.050295 .  
+## age            -0.05640   0.94516  0.02184 -2.583 0.009796 ** 
+## raceother      -0.30983   0.73357  0.30780 -1.007 0.314133    
+## wexpyes        -0.15331   0.85786  0.21218 -0.723 0.469957    
+## marnot married  0.44339   1.55799  0.38136  1.163 0.244958    
+## prio            0.09336   1.09785  0.02832  3.296 0.000981 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+##                exp(coef) exp(-coef) lower .95 upper .95
+## finyes            0.6883     1.4528    0.4735    1.0005
+## age               0.9452     1.0580    0.9056    0.9865
+## raceother         0.7336     1.3632    0.4013    1.3410
+## wexpyes           0.8579     1.1657    0.5660    1.3003
+## marnot married    1.5580     0.6419    0.7378    3.2898
+## prio              1.0979     0.9109    1.0386    1.1605
+## 
+## Concordance= 0.642  (se = 0.027 )
+## Likelihood ratio test= 33.08  on 6 df,   p=1e-05
+## Wald test            = 32.01  on 6 df,   p=2e-05
+## Score (logrank) test = 33.43  on 6 df,   p=9e-06
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# Estimated survival function}
+\FunctionTok{plot}\NormalTok{(}\FunctionTok{survfit}\NormalTok{(fit),}\AttributeTok{ylim=}\FunctionTok{c}\NormalTok{(}\FloatTok{0.6}\NormalTok{,}\DecValTok{1}\NormalTok{),}\AttributeTok{xlab=}\StringTok{"Weeks"}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Prop.of Not Rearrested"}\NormalTok{)}
+
+
+\CommentTok{\# Estimated survival functions for financial aid}
+\NormalTok{Rossi.fin }\OtherTok{=} \FunctionTok{with}\NormalTok{(Rossi, }\FunctionTok{data.frame}\NormalTok{(}\AttributeTok{fin=}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{), }\AttributeTok{age=}\FunctionTok{rep}\NormalTok{(}\FunctionTok{mean}\NormalTok{(age), }\DecValTok{2}\NormalTok{), }
+                                   \AttributeTok{race=}\FunctionTok{rep}\NormalTok{(}\FunctionTok{mean}\NormalTok{(race}\SpecialCharTok{==}\StringTok{\textquotesingle{}other\textquotesingle{}}\NormalTok{),}\DecValTok{2}\NormalTok{), }
+                                   \AttributeTok{wexp=}\FunctionTok{rep}\NormalTok{(}\FunctionTok{mean}\NormalTok{(wexp}\SpecialCharTok{==}\StringTok{"yes"}\NormalTok{),}\DecValTok{2}\NormalTok{), }
+                                   \AttributeTok{mar=}\FunctionTok{rep}\NormalTok{(}\FunctionTok{mean}\NormalTok{(mar}\SpecialCharTok{==}\StringTok{"not married"}\NormalTok{),}\DecValTok{2}\NormalTok{),}
+                                   \AttributeTok{prio=}\FunctionTok{rep}\NormalTok{(}\FunctionTok{mean}\NormalTok{(prio),}\DecValTok{2}\NormalTok{)))}
+
+\FunctionTok{plot}\NormalTok{(}\FunctionTok{survfit}\NormalTok{(fit,}\AttributeTok{newdata=}\NormalTok{Rossi.fin), }\AttributeTok{conf.int=}\ConstantTok{TRUE}\NormalTok{,}
+     \AttributeTok{lty=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{, }\DecValTok{2}\NormalTok{), }\AttributeTok{ylim=}\FunctionTok{c}\NormalTok{(}\FloatTok{0.6}\NormalTok{, }\DecValTok{1}\NormalTok{), }\AttributeTok{col=}\FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{), }
+     \AttributeTok{xlab=}\StringTok{"Weeks"}\NormalTok{, }\AttributeTok{ylab=}\StringTok{"Prop. of Not Rearrested"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning in model.frame.default(data = structure(list(fin = c(0, 1), age =
+## c(24.5972222222222, : variable 'fin' is not a factor
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in model.frame.default(data = structure(list(fin = c(0, 1), age =
+## c(24.5972222222222, : variable 'race' is not a factor
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in model.frame.default(data = structure(list(fin = c(0, 1), age =
+## c(24.5972222222222, : variable 'wexp' is not a factor
+\end{verbatim}
+
+\begin{verbatim}
+## Warning in model.frame.default(data = structure(list(fin = c(0, 1), age =
+## c(24.5972222222222, : variable 'mar' is not a factor
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{legend}\NormalTok{(}\StringTok{"bottomleft"}\NormalTok{, }\AttributeTok{legend=}\FunctionTok{c}\NormalTok{(}\StringTok{"fin = no"}\NormalTok{,}\StringTok{"fin = yes"}\NormalTok{), }
+       \AttributeTok{lty=}\FunctionTok{c}\NormalTok{(}\DecValTok{1}\NormalTok{ ,}\DecValTok{2}\NormalTok{),}\AttributeTok{col=}\FunctionTok{c}\NormalTok{(}\StringTok{\textquotesingle{}red\textquotesingle{}}\NormalTok{,}\StringTok{\textquotesingle{}blue\textquotesingle{}}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{SM_Example1_files/figure-latex/unnamed-chunk-1-9.pdf}
+
+\end{document}

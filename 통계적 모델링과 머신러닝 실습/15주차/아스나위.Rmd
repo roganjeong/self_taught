@@ -1,0 +1,257 @@
+---
+title: "HW2"
+author: "Asnawi"
+date: "11/13/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+##Q1
+# Pattern and Cluster of the Missing Data
+First of all, to handle the missing data in our first dataset, we need to identify the pattern of missing value whether is MCAR, MAR or MNAR by analysing the pattern of missing value of each variables.
+
+```{r}
+library(mice)
+library(rms)
+library(corrplot)
+dat1<- read.csv("train.csv")
+md.pattern(dat1)
+```
+From the md.pattern function, 149 missing values is observerd and no Y value is missing from our training dataset.
+
+```{r message=FALSE, warning=FALSE}
+library(finalfit)
+missing_pairs(dat1,"Y",c("X1","X2","X3","X4"))
+```
+
+From the boxplots below, there is any significant pattern between each missing variable with Y variable. Hence, we can observed that the missing value is missing at random.
+```{r}
+missing.cluster=naclus(dat1,method="average")
+plot(missing.cluster)
+```
+From the plot above, it is observed that there is two missing cluster which is X1,X2 and X3 and X4 but since mice imputation will be used the cluster will not have a significant impact on our imputation results.
+Moreover, since there is no missing Y variable, analysis of randomness of Y variable is not needed.
+
+# Imputation with MICE method
+
+```{r, message=FALSE}
+set.seed(2021)
+imp= mice(dat1,m=10, method=c("pmm","pmm","pmm","pmm",""),print=F)
+imp.rf= mice(dat1,m=10, method=c("rf","rf","rf","rf",""),print=F)
+imp$imp$X1
+imp.rf$imp$X1
+```
+For this question, two Mice method imputation which PMM and random forest was used to impute the missing values. Both imputation values were observed to have quite different imputated values.Next, convergence of both imputation values and comparison between both imputed datas and observed data must been analysed first, to determine whether the imputation values can be used to train a predictive model.
+# Convergence and Comparison between first imputed data and observed data
+```{r}
+plot(imp, c("X1","X2","X3","X4"))
+stripplot(imp, pch=20, cex=1.2)
+densityplot(imp, scales=list(relation='free'))
+```
+For this PMM Mice method imputated data, all missing variables seem to reach convergene state and there is no significant difference of density between imputated data and observed data which make this imputated data valid to use for predictive model.
+# Convergence and Comparison between Random Forest imputed data and observed data\
+```{r}
+plot(imp.rf, c("X1","X2","X3","X4"))
+stripplot(imp.rf, pch=20, cex=1.2)
+densityplot(imp.rf, scales=list(relation='free'))
+```
+For this Random Forest Mice method imputated data, all missing variables seem to reach convergene state and there is no significant difference of density between imputated data and observed data which make this imputated data valid to use for predictive model.
+## Transformation of Data
+
+# Skewness of Data
+```{r, message=FALSE}
+library(moments)
+imp.dat1= complete(imp,10)
+par(mfrow=c(1,4))
+for(j in c("X1","X2","X3","X4"))
+{
+  hist(imp.dat1[,j],main=j,xlab=skewness(imp.dat1[,j]))
+}
+```
+
+```{r, message=FALSE}
+imp.dat1.rf= complete(imp.rf,10)
+par(mfrow=c(1,4))
+for(j in c("X1","X2","X3","X4"))
+{
+  hist(imp.dat1.rf[,j],main=j,xlab=skewness(imp.dat1.rf[,j]))
+}
+```
+## Data Modelling
+In this question, three model have been considered which is linear model, random forest and Xgboost. Out of these three models Xgboost model outperform other model and have fast computation time too.
+
+#XGBoost Model
+First of all, I used the lastest set of imputation data from the first imputated data to fine the best tuning parameter for Xgboost model. Since the distrubution of all set of imputated data are similar, using th latest set of imputation with give the optimal tuning parameter for whole imputed set.
+```{r}
+library(xgboost)
+library(caret)
+X_train = xgb.DMatrix(as.matrix(complete(imp,10) %>% select(-Y)))
+y_train = complete(imp,10)$Y
+xgb_trcontrol = trainControl(
+  method = "cv",
+  number = 5,  
+  allowParallel = TRUE,
+  verboseIter = FALSE,
+  returnData = FALSE
+)
+xgbGrid <- expand.grid(nrounds = c(50,100,200),  
+                       max_depth = c(10, 15, 20, 25),
+                       colsample_bytree = seq(0.5, 0.9, length.out = 5),
+                       ## The values below are default values in the sklearn-api. 
+                       eta = 0.1,
+                       gamma=0,
+                       min_child_weight = 1,
+                       subsample = 1
+)
+set.seed(2021) 
+xgb_model = train(
+  X_train, y_train,  
+  trControl = xgb_trcontrol,
+  tuneGrid = xgbGrid,
+  method = "xgbTree"
+)
+xgb_model$bestTune
+```
+By using the train() function, we found the optimal tuning paramter for our dataset. Then we used the optimal tuning parameter and fit the model into all of the imputated set of data. 
+Pooling Modelling
+```{r}
+library(caret)
+M=imp$m
+imp.dat=vector(mode="list",length=M)
+for(m in 1:M) imp.dat[[m]]=complete(imp,m)
+xg.boost.model= function(dat)xgboost(data= dat %>% select(-Y) %>% as.matrix(),label = complete(imp,10)$Y,nrounds = 100,eta=.1,max_depth=10,colsample_bytree=0.8,min_child_weight=1,subsample=1)
+fit.xgboost= lapply(imp.dat,xg.boost.model)
+## Import the test data
+test.data=read.csv("test.csv")
+X_test=xgb.DMatrix(as.matrix(test.data %>% select(-Y)))
+Y_test=test.data$Y
+```
+# Evaluaton of Model
+In the evaluation, I fit the pmm method of imputated set first and then fit the xgboost model with the rf method imputation method
+```{r, message=FALSE}
+yhat.imp.xg=lapply(fit.xgboost,predict,newdata=X_test)
+yhat.imp.xg=matrix(unlist(yhat.imp.xg),nrow(test.data),M)
+yhat.imp.xg=apply(yhat.imp.xg,1,mean)
+mse=mean((yhat.imp.xg-test.data$Y)^2)
+# Using random forest method imputate data
+imp.dat.rf=vector(mode="list",length=M)
+for(m in 1:M) imp.dat.rf[[m]]=complete(imp.rf,m)
+fit.xgboost.rf= lapply(imp.dat,xg.boost.model)
+yhat.imp.xg.rf=lapply(fit.xgboost.rf,predict,newdata=X_test)
+yhat.imp.xg.rf=matrix(unlist(yhat.imp.xg.rf),nrow(test.data),M)
+yhat.imp.xg.rf=apply(yhat.imp.xg.rf,1,mean)
+mse.rf=mean((yhat.imp.xg.rf-test.data$Y)^2)
+mse ; mse.rf
+```
+Finally, I got test error rate of 17.15805 with PMM imputated method and 17.26736 test error rate with rf imputated method. Pmm imputated have a slighter lower test error rater than rf imputated method.
+
+
+
+
+## Q2
+```{r}
+dat2<- read.csv("pm25_tr.csv")
+dat2$cbwd<- as.factor(dat2$cbwd)
+```
+## Data Prepocessing
+# Missing value
+```{r}
+describe(dat2)
+```
+the data doest not contain any misinng values, hence imputation is no needed.
+## Feature Enginering
+Since the Information about this data is limited with only meteorological values and only dates, we need to create more predictor variables from the data given.
+# Weekday and Weekend varoable from date
+Since, this data is about air pollution of a city, weekday and weekend may be an importance feature since, more use transportation during weekday to commute to their workplace while on weekday most of the time, people just rest at home which could effect the air pollution.
+```{r}
+library(timeDate)
+dat2$date <- as.Date(with(dat2, paste(year, month, day,sep="-")), "%Y-%m-%d")
+dat2$weekday<-isWeekday(dat2$date, wday=1:5) %>% as.integer(as.logical())
+dat2$weekend<-isWeekend(dat2$date, wday=1:5) %>% as.integer(as.logical())
+t.test(dat2 %>% filter(weekday==1) %>% select(pm25),dat2 %>% filter(weekday==0) %>% select(pm25))
+```
+From the t.test result, there is an significant evidence of different value of pm25 during weekday and weeked. Thus, making a dummy variable of weekday will be a good predictor for air pollution
+
+# seasonality trend in hour and day
+Moreover, by observing the the trend of pm25 by each hour and day could be a good predictor since rate of human activity differ in each hour and each day which could effect the air pollution
+```{r}
+hourlymean<-dat2 %>% group_by(hour) %>% summarise(mean=mean(pm25))
+par(mfrow=c(1,2))
+ggplot(hourlymean,aes(x=hour,y=mean))+
+  geom_line()
+## upward trend from 1600 to 1000 and downward trend from 10 to 16
+daymean<-dat2 %>% group_by(day) %>% summarise(mean=mean(pm25))
+ggplot(daymean,aes(x=day,y=mean))+
+  geom_line()
+```
+
+From the mean hour graph, we can see that there is a upward trend from 1600 to 1000 and downward trend from 1000 to 1600. Thus making a dummy variable in each hour as a predictor variable may be a good choice for our data modelling. However, there seem no trend in mean day graph which may conclude that air pollution is not related with the day.
+
+```{r}
+#Creating dummy variables of hour
+library(fastDummies)
+dat2<-dummy_cols(dat2, select_columns = "hour")
+```
+# Effect of Direction of Wind to PM25 and Wind speed
+It is known that wind speed is an important feature to predict pm25 since strong wind speed can reduce the airpollution. Hence, dummy variable of each wind direction is created.
+Morever, based on the correlation matrix plo below, Northeast and Northwest increase the correlations between wind speed and Pm25. Thus, putting an interaction variable between northen wind and wind speed may be a good predictor variable for our predictive model.
+
+```{r}
+dat2<-dummy_cols(dat2,select_columns = "cbwd")
+par(mfrow=c(1,4))
+corrplot(dat2 %>%filter(cbwd_cv==1) %>%  select(pm25,DEWP,TEMP,PRES,Iws) %>% cor(), method="number")
+corrplot(dat2 %>%filter(cbwd_NE==1) %>%  select(pm25,DEWP,TEMP,PRES,Iws) %>% cor(), method="number")
+corrplot(dat2 %>%filter(cbwd_NW==1) %>%  select(pm25,DEWP,TEMP,PRES,Iws) %>% cor(), method="number")
+corrplot(dat2 %>%filter(cbwd_SE==1) %>%  select(pm25,DEWP,TEMP,PRES,Iws) %>% cor(), method="number")
+
+```
+```{r}
+#Create interaction term between cumulative wind speed and northerly wind direction.
+dat2$cbwd_N = (dat2$cbwd_NE* dat2$Iws) + (dat2$cbwd_NW* dat2$Iws)
+```
+#Finalizing our dataset
+Since based on the instruction, the next 5 day pm25 value can't be used to predict pm25, lagged variables is not used on this data modelling process. Finally, remove the unneeded variable from the dataset
+```{r}
+# Final
+dat2<- dat2 %>% select(-c(year,month,hour,day,cbwd,date,weekday))
+
+```
+## Model Training
+Since the finalized dataset have many variables, 5 model that can reduce the dimension of the model have been tried which is lasso regression, ridge regression, pca regression , pls regression and random forest algorithm have been try to find the lowest MSE value. Lasso Regression came out with the lowest MSE test scoe.
+```{r}
+library(glmnet)
+y=dat2$pm25
+x=data.matrix(dat2%>% select(-pm25))
+set.seed(2021)
+cv_model <- cv.glmnet(x, y, alpha = 1)
+best_lambda <- cv_model$lambda.min
+best_lambda #0.0612066
+plot(cv_model) 
+best_model <- glmnet(x, y, alpha = 1, lambda = best_lambda)
+coef(best_model)
+```
+By using the cv.glmnet function, the best lambda value  was found. Then, by using the lambda value, we train the data and make a prediction on the next 5 day based on the meoteorogical factor given. However, not much variable was reduce since the best lambda value is small
+# Import and change the variable of the test date
+```{r}
+test.data2<- read.csv("pm25_te.csv")
+test.data2$date <- as.Date(with(test.data2, paste(year, month, day,sep="-")), "%Y-%m-%d")
+test.data2$weekend<-isWeekend(test.data2$date, wday=1:5) %>% as.integer(as.logical())
+test.data2<-dummy_cols(test.data2, select_columns = "hour")
+test.data2<-dummy_cols(test.data2,select_columns = "cbwd")
+test.data2$cbwd_N = (test.data2$cbwd_NE* test.data2$Iws) + (test.data2$cbwd_NW* test.data2$Iws)
+test.data2=test.data2 %>% select(-c(year,month,hour,day,cbwd,date))
+y.test1= test.data2$pm25
+x.test1= data.matrix(test.data2 %>% select(-pm25))
+```
+# Prediction and MSE Test Score
+```{r}
+library(caret)
+lasso.pred=predict(cv_model,s=best_lambda,newx = x.test1)
+
+mean((lasso.pred-y.test1)^2)#1377.227
+```
+The Final test mse value is 1377.277
