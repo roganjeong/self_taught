@@ -1,0 +1,315 @@
+> #--------------------------------------------------------#
+> #         Alcohol onsumption & malformation         #
+> #                       Binomial data                        #
+> #--------------------------------------------------------#
+> 
+> alcohol <- c('0','<1','1-2','3-5','>=6')
+> pre <- c(48,38,5,1,1)
+> abs <- c(17066,14464,788,126,37)
+> tot <- mal.pre+mal.abs
+> Malf <- data.frame(alcohol,pre,abs,tot)
+> Malf
+  alcohol pre   abs   tot
+1       0  48 17066 17114
+2      <1  38 14464 14502
+3     1-2   5   788   793
+4     3-5   1   126   127
+5     >=6   1    37    38
+> 
+> Malf$alc <- c(0, 0.5,1.5,4.0,7.0)
+> 
+> # Identity link with binomial random component
+> fit1 <- glm(pre/tot ~ alc, family=quasi (link=identity, variance="mu(1-mu)"), weights=tot,data=Malf)
+> summary(fit1, dispersion=1)
+
+Call:
+glm(formula = pre/tot ~ alc, family = quasi(link = identity, 
+    variance = "mu(1-mu)"), data = Malf, weights = tot)
+
+Deviance Residuals: 
+      1        2        3        4        5  
+ 0.6564  -1.0492   0.8631   0.1302   0.8282  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept) 0.0025476  0.0003523   7.232 4.76e-13 ***
+alc         0.0010872  0.0008324   1.306    0.192    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for quasi family taken to be 1)
+
+    Null deviance: 6.2020  on 4  degrees of freedom
+Residual deviance: 2.9795  on 3  degrees of freedom
+AIC: NA
+
+Number of Fisher Scoring iterations: 10
+
+> 
+> # Logit link with binomial random component
+> fit2 <- glm(pre/tot ~ alc, family=binomial (link=logit), weights=tot,data=Malf)
+> summary(fit2)
+
+Call:
+glm(formula = pre/tot ~ alc, family = binomial(link = logit), 
+    data = Malf, weights = tot)
+
+Deviance Residuals: 
+      1        2        3        4        5  
+ 0.5921  -0.8801   0.8865  -0.1449   0.1291  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  -5.9605     0.1154 -51.637   <2e-16 ***
+alc           0.3166     0.1254   2.523   0.0116 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 6.2020  on 4  degrees of freedom
+Residual deviance: 1.9487  on 3  degrees of freedom
+AIC: 24.576
+
+Number of Fisher Scoring iterations: 4
+
+> fit2
+
+Call:  glm(formula = pre/tot ~ alc, family = binomial(link = logit), 
+    data = Malf, weights = tot)
+
+Coefficients:
+(Intercept)          alc  
+    -5.9605       0.3166  
+
+Degrees of Freedom: 4 Total (i.e. Null);  3 Residual
+Null Deviance:      6.202 
+Residual Deviance: 1.949        AIC: 24.58
+> fitted(fit2)
+          1           2           3           4           5 
+0.002572090 0.003011861 0.004128844 0.009065077 0.023100302 
+> confint(fit2)  
+Waiting for profiling to be done...
+                  2.5 %     97.5 %
+(Intercept) -6.19302366 -5.7396968
+alc          0.01868149  0.5234947
+> 
+> library(car)
+> Anova(fit2)  # likelihood-ratio tests for effect parameters in a GLM
+Analysis of Deviance Table (Type II tests)
+
+Response: pre/tot
+    LR Chisq Df Pr(>Chisq)  
+alc   4.2533  1    0.03917 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> 
+> 
+> #--------------------------------------------------------#
+> #             Silicon  data (count data)                   #
+> #--------------------------------------------------------#
+> 
+> trt <- c(rep('B',10),rep('A',10))
+> defect <- c(9,9,8,14,8,13,11,5,7,6,8,7,6,6,3,4,7,2,3,4)
+> silicon <- data.frame(trt,defect)
+> 
+> # identity link
+> pois.fit1 <- glm(defect ~ factor(trt), family=quasi (link=identity, variance="mu"), data=silicon)
+> summary(pois.fit1, dispersion=1)
+
+Call:
+glm(formula = defect ~ factor(trt), family = quasi(link = identity, 
+    variance = "mu"), data = silicon)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.5280  -0.7622  -0.1699   0.6938   1.5399  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)    5.0000     0.7071   7.071 1.54e-12 ***
+factor(trt)B   4.0000     1.1832   3.381 0.000723 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for quasi family taken to be 1)
+
+    Null deviance: 27.857  on 19  degrees of freedom
+Residual deviance: 16.268  on 18  degrees of freedom
+AIC: NA
+
+Number of Fisher Scoring iterations: 3
+
+> 
+> # log link
+> pois.fit2 <- glm(defect ~ factor(trt), family=poisson (link=log), data=silicon)
+> summary(pois.fit2)
+
+Call:
+glm(formula = defect ~ factor(trt), family = poisson(link = log), 
+    data = silicon)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.5280  -0.7622  -0.1699   0.6938   1.5399  
+
+Coefficients:
+             Estimate Std. Error z value Pr(>|z|)    
+(Intercept)    1.6094     0.1414  11.380  < 2e-16 ***
+factor(trt)B   0.5878     0.1764   3.332 0.000861 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 27.857  on 19  degrees of freedom
+Residual deviance: 16.268  on 18  degrees of freedom
+AIC: 94.349
+
+Number of Fisher Scoring iterations: 4
+
+> 
+> pois.fit3 <-  glm(defect ~ 1, family=poisson (link=log), data=silicon)
+> #pois.fit3 <- update(pois.fit2,.~.-factor(trt)) 
+> summary(pois.fit3)
+
+Call:
+glm(formula = defect ~ 1, family = poisson(link = log), data = silicon)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.2336  -0.9063   0.0000   0.4580   2.3255  
+
+Coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  1.94591    0.08451   23.02   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 27.857  on 19  degrees of freedom
+Residual deviance: 27.857  on 19  degrees of freedom
+AIC: 103.94
+
+Number of Fisher Scoring iterations: 4
+
+> 
+> 
+> #--------------------------------------------------------#
+> #                    GSS (count data)                       #
+> #--------------------------------------------------------#
+> 
+> white <- c(1070, 60,14,4,0,0,1)
+> black <- c(119,16,12,7,3,2,0)
+> other <- c(55,5,1,0,1,0,0)
+> res <- c(0,1,2,3,4,5,6)
+> 
+> n <- length(white)
+> N <- sum(c(white,black))
+> response <- rep(0,N)
+> race <- rep(0,N)
+> 
+> # White
+> num1 <-0
+> num2 <-0
+> for(i in 1:n){
++    if(white[i]!=0){
++      num1 <- num2
++      num2 <- num2+white[i]
++      response[(num1+1):num2] <- res[i]
++      race[(num1+1):num2] <- 0
++    }
++    print(c(num1,num2))
++ }
+[1]    0 1070
+[1] 1070 1130
+[1] 1130 1144
+[1] 1144 1148
+[1] 1144 1148
+[1] 1144 1148
+[1] 1148 1149
+> 
+> # Black
+> num1 <-sum(white)
+> num2 <-sum(white)
+> for(i in 1:n){
++    if(black[i]!=0){
++      num1 <- num2
++      num2 <- num2+black[i]
++      response[(num1+1):num2] <- res[i]
++      race[(num1+1):num2] <- 1
++    }
++    print(c(num1,num2))
++ }
+[1] 1149 1268
+[1] 1268 1284
+[1] 1284 1296
+[1] 1296 1303
+[1] 1303 1306
+[1] 1306 1308
+[1] 1306 1308
+> 
+> GSS <- data.frame(response,race)
+> 
+> # negative binomial regression with log link
+> library(MASS)
+> NB.fit <- glm.nb(response ~ factor(race), data=GSS)
+> summary(NB.fit)
+
+Call:
+glm.nb(formula = response ~ factor(race), data = GSS, init.theta = 0.2023119205, 
+    link = log)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-0.7184  -0.3899  -0.3899  -0.3899   3.5072  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)    -2.3832     0.1172 -20.335  < 2e-16 ***
+factor(race)1   1.7331     0.2385   7.268 3.66e-13 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for Negative Binomial(0.2023) family taken to be 1)
+
+    Null deviance: 471.57  on 1307  degrees of freedom
+Residual deviance: 412.60  on 1306  degrees of freedom
+AIC: 1001.8
+
+Number of Fisher Scoring iterations: 1
+
+
+              Theta:  0.2023 
+          Std. Err.:  0.0409 
+
+ 2 x log-likelihood:  -995.7980 
+> 
+> # Poisson regression with log link
+> pois.fit <- glm(response ~ factor(race), family=poisson (link=log), data=GSS)
+> summary(pois.fit)
+
+Call:
+glm(formula = response ~ factor(race), family = poisson(link = log), 
+    data = GSS)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-1.0218  -0.4295  -0.4295  -0.4295   6.1874  
+
+Coefficients:
+              Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   -2.38321    0.09713  -24.54   <2e-16 ***
+factor(race)1  1.73314    0.14657   11.82   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 1)
+
+    Null deviance: 962.80  on 1307  degrees of freedom
+Residual deviance: 844.71  on 1306  degrees of freedom
+AIC: 1122
+
+Number of Fisher Scoring iterations: 6
+

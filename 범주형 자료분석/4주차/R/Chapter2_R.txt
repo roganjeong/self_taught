@@ -1,0 +1,117 @@
+> # Aspirin and incidence of heart attacks
+> # uses the two success counts and n1 and n2, no continuity correction
+> prop.test(c(189,104),c(11034,11037),conf.level=0.95, correct=FALSE)
+
+        2-sample test for equality of proportions without continuity
+        correction
+
+data:  c(189, 104) out of c(11034, 11037)
+X-squared = 25.014, df = 1, p-value = 5.692e-07
+alternative hypothesis: two.sided
+95 percent confidence interval:
+ 0.004687751 0.010724297
+sample estimates:
+    prop 1     prop 2 
+0.01712887 0.00942285 
+
+> 
+> library(PropCIs) # uses binomial sucess count and n for each group
+> diffscoreci(189,11034,104,11037,conf.level=0.95) # score CI for difference of proportions
+
+data:  
+
+95 percent confidence interval:
+ 0.004716821 0.010788501
+
+> riskscoreci(189,11034,104,11037,conf.level=0.95) # score CI for relative risk
+
+data:  
+
+95 percent confidence interval:
+ 1.433904 2.304713
+
+> 
+> library(epitools) # uses the four cell counts
+> oddsratio(c(189,10845,104,10933),method="wald",conf=0.95,correct=FALSE) # Wald CI for odds ratio, no continuity correction
+$data
+          Outcome
+Predictor  Disease1 Disease2 Total
+  Exposed1      189    10845 11034
+  Exposed2      104    10933 11037
+  Total         293    21778 22071
+
+$measure
+          odds ratio with 95% C.I.
+Predictor  estimate    lower   upper
+  Exposed1 1.000000       NA      NA
+  Exposed2 1.832054 1.440042 2.33078
+
+$p.value
+          two-sided
+Predictor    midp.exact fisher.exact   chi.square
+  Exposed1           NA           NA           NA
+  Exposed2 4.989646e-07 5.032836e-07 5.691897e-07
+
+$correction
+[1] FALSE
+
+attr(,"method")
+[1] "Unconditional MLE & normal approximation (Wald) CI"
+> 
+> library(PropCIs) # uses success count and n for each binomial group
+> orscoreci(189,10845,104,10933,conf=0.95)
+
+data:  
+
+95 percent confidence interval:
+ 1.452408 2.348316
+
+
+> # Job satisfaction
+> job <- matrix(c(2,2,0,0,4,6,1,3,13,22,15,13,3,4,8,8),ncol=4)
+> job.res <- chisq.test(job)  # chi-squared independece test
+경고메시지(들): 
+In chisq.test(job) : 카이제곱 approximation은 정확하지 않을수도 있습니다
+> job.res
+
+        Pearson's Chi-squared test
+
+data:  job
+X-squared = 11.524, df = 9, p-value = 0.2415
+
+> stdres <- job.res$stdres
+> stdres
+           [,1]       [,2]       [,3]      [,4]
+[1,]  1.4406207  0.7305280 -0.1606257 -1.079180
+[2,]  0.7525419  0.8715747  0.6005081 -1.772568
+[3,] -1.1171392 -1.5211385  0.2198088  1.509794
+[4,] -1.1171392 -0.1573592 -0.7326960  1.509794
+
+> 
+> # Fisher exact test
+> tea <-matrix(c(3,1,1,3),ncol=2)
+> fisher.test(tea)
+
+        Fisher's Exact Test for Count Data
+
+data:  tea
+p-value = 0.4857
+alternative hypothesis: true odds ratio is not equal to 1
+95 percent confidence interval:
+   0.2117329 621.9337505
+sample estimates:
+odds ratio 
+  6.408309 
+
+> fisher.test(tea,alternative="greater")
+
+        Fisher's Exact Test for Count Data
+
+data:  tea
+p-value = 0.2429
+alternative hypothesis: true odds ratio is greater than 1
+95 percent confidence interval:
+ 0.3135693       Inf
+sample estimates:
+odds ratio 
+  6.408309
