@@ -1,0 +1,4 @@
+The first col is patient ID 
+the second one is the week, 
+the 3rd is treatment (0/1) 
+the fourth is the quit status (response)
