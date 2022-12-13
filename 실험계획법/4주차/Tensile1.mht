@@ -1,0 +1,1338 @@
+From: =?ks_c_5601-1987?B?SW50ZXJuZXQgRXhwbG9yZXIgMTG/obytIMD6wOW1yg==?=
+Subject: SAS Output
+Date: Sun, 9 Apr 2017 19:11:31 +0900
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01D2B165.18C802A0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.3.9600.18538
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01D2B165.18C802A0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file://C:\Users\Keunbaik Lee\AppData\Local\Temp\SAS Temporary Files\_TD36688_KEUNBAIKLEE-PC_\sashtml.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content=3D"IE=3D5.0000" =
+http-equiv=3D"X-UA-Compatible">
+<TITLE>SAS Output</TITLE>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.9600.18538">
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-type>
+<STYLE type=3Dtext/css>.aftercaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; PADDING-TOP: 4pt; =
+BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.batch {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: 'SAS =
+Monospace', 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px =
+solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 7px; FONT-STYLE: =
+normal; PADDING-TOP: 7px; PADDING-LEFT: 7px; BORDER-SPACING: 1px; =
+BORDER-LEFT: #c1c1c1 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: =
+#fafbfe
+}
+.beforecaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: =
+0px; BACKGROUND-COLOR: #fafbfe
+}
+.body {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: =
+8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.bodydate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; =
+BACKGROUND-COLOR: #fafbfe
+}
+.bycontentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.byline {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: =
+0px; BACKGROUND-COLOR: #fafbfe
+}
+.bylinecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: =
+100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 =
+0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.caption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: =
+0px; BACKGROUND-COLOR: #fafbfe
+}
+.cell {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.container {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.contentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.contentitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.contentproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.contentprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.contents {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; =
+MARGIN-RIGHT: 8px
+}
+.contentsdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.contenttitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: =
+#fafbfe
+}
+.continued {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.data {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+italic; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataempty {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datafixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: =
+#c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: =
+#c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrong {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#ffffff
+}
+.datastrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#ffffff
+}
+.date {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.document {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.errorbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.errorcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.errorcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.extendedpage {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 1pt solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 1pt solid; =
+BORDER-BOTTOM: #000000 1pt solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; TEXT-ALIGN: center; BORDER-LEFT: #000000 1pt solid; =
+BACKGROUND-COLOR: #fafbfe
+}
+.fatalbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.fatalcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.folderaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.footer {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.frame {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.graph {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: =
+1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.header {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headersandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.index {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.indexaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.indexitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.indexprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.indextitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: =
+#fafbfe
+}
+.layoutcontainer {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: =
+#000000 0px solid
+}
+.layoutregion {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: =
+#000000 0px solid
+}
+.linecontent {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#fafbfe
+}
+.list {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; BACKGROUND-COLOR: #fafbfe
+}
+.list10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.note {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.notebanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.notecontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.notecontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.output {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: =
+1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.pageno {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+VERTICAL-ALIGN: top; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: =
+normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: =
+#fafbfe
+}
+.pages {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; =
+MARGIN-RIGHT: 8px
+}
+.pagesdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.pagesitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.pagesproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.pagesprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.pagestitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: =
+#fafbfe
+}
+.paragraph {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.parskip {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: bold; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BORDER-LEFT: #000000 0px solid
+}
+.prepage {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: =
+left; BACKGROUND-COLOR: #fafbfe
+}
+.proctitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.proctitlefixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier, monospace; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.rowfooter {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooteremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooteremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooterempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooterfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooterstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheader {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.systemfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle10 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle2 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle3 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle4 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle5 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle6 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle7 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle8 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle9 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systitleandfootercontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: =
+100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 =
+0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.table {
+	BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 0px solid; =
+BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #c1c1c1 0px solid; =
+BORDER-SPACING: 0px; BORDER-LEFT: #c1c1c1 1px solid
+}
+.top_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: =
+1px; BORDER-LEFT: 0px
+}
+.middle_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: =
+1px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.bottom_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-TOP: =
+1px; BORDER-LEFT: 0px
+}
+.titleandnotecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: =
+100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 =
+0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.titlesandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.usertext {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.warnbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.warncontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.warncontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.l {
+	TEXT-ALIGN: left
+}
+.c {
+	TEXT-ALIGN: center
+}
+.r {
+	TEXT-ALIGN: right
+}
+.d {
+	TEXT-ALIGN: right
+}
+.j {
+	TEXT-ALIGN: justify
+}
+.t {
+	VERTICAL-ALIGN: top
+}
+.m {
+	VERTICAL-ALIGN: middle
+}
+.b {
+	VERTICAL-ALIGN: bottom
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+.stacked_cell {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 0px
+}
+</STYLE>
+
+<SCRIPT language=3Djavascript type=3Dtext/javascript>
+<!--=20
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY class=3Dbody onload=3Dstartup() onunload=3Dshutdown()>
+<SCRIPT language=3Djavascript type=3Dtext/javascript>
+<!--=20
+var _info =3D navigator.userAgent
+var _ie =3D (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 =3D _info.indexOf("x64") > 0
+
+//-->
+</SCRIPT>
+
+<DIV class=3Dbranch><A name=3DIDX></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">The SAS =
+System</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The GLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Class Levels" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D3 scope=3Dcolgroup>Class Level=20
+  Information</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Class</TH>
+    <TH class=3D"r b header" scope=3Dcol>Levels</TH>
+    <TH class=3D"l b header" scope=3Dcol>Values</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>percent</TH>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"l data">15 20 25 30 =
+35</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX1></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Number of Observations" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Number of Observations =
+Read</TH>
+    <TD class=3D"r data">25</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Number of Observations =
+Used</TH>
+    <TD class=3D"r data">25</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX2></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">The SAS =
+System</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The GLM Procedure</DIV>
+<DIV class=3D"c proctitle">&nbsp;</DIV>
+<DIV class=3D"c proctitle">Dependent Variable: strength </DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Overall ANOVA" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Source</TH>
+    <TH class=3D"r b header" scope=3Dcol>DF</TH>
+    <TH class=3D"r b header" scope=3Dcol>Sum of Squares</TH>
+    <TH class=3D"r b header" scope=3Dcol>Mean Square</TH>
+    <TH class=3D"r b header" scope=3Dcol>F Value</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Model</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">475.7600000</TD>
+    <TD class=3D"r data">118.9400000</TD>
+    <TD class=3D"r data">14.76</TD>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Error</TH>
+    <TD class=3D"r data">20</TD>
+    <TD class=3D"r data">161.2000000</TD>
+    <TD class=3D"r data">8.0600000</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Corrected Total</TH>
+    <TD class=3D"r data">24</TD>
+    <TD class=3D"r data">636.9600000</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r =
+data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX3></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Fit Statistics" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>R-Square</TH>
+    <TH class=3D"r b header" scope=3Dcol>Coeff Var</TH>
+    <TH class=3D"r b header" scope=3Dcol>Root MSE</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>strength&nbsp;Mean</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">0.746923</TD>
+    <TD class=3D"r data">18.87642</TD>
+    <TD class=3D"r data">2.839014</TD>
+    <TD class=3D"r =
+data">15.04000</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX4></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Type I Model ANOVA" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Source</TH>
+    <TH class=3D"r b header" scope=3Dcol>DF</TH>
+    <TH class=3D"r b header" scope=3Dcol>Type I SS</TH>
+    <TH class=3D"r b header" scope=3Dcol>Mean Square</TH>
+    <TH class=3D"r b header" scope=3Dcol>F Value</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>percent</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">475.7600000</TD>
+    <TD class=3D"r data">118.9400000</TD>
+    <TD class=3D"r data">14.76</TD>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX5></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Type III Model ANOVA" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Source</TH>
+    <TH class=3D"r b header" scope=3Dcol>DF</TH>
+    <TH class=3D"r b header" scope=3Dcol>Type III SS</TH>
+    <TH class=3D"r b header" scope=3Dcol>Mean Square</TH>
+    <TH class=3D"r b header" scope=3Dcol>F Value</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>percent</TH>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">475.7600000</TD>
+    <TD class=3D"r data">118.9400000</TD>
+    <TD class=3D"r data">14.76</TD>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX6></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Contrasts" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Contrast</TH>
+    <TH class=3D"r b header" scope=3Dcol>DF</TH>
+    <TH class=3D"r b header" scope=3Dcol>Contrast SS</TH>
+    <TH class=3D"r b header" scope=3Dcol>Mean Square</TH>
+    <TH class=3D"r b header" scope=3Dcol>F Value</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>C1</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">291.6000000</TD>
+    <TD class=3D"r data">291.6000000</TD>
+    <TD class=3D"r data">36.18</TD>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>C2</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">31.2500000</TD>
+    <TD class=3D"r data">31.2500000</TD>
+    <TD class=3D"r data">3.88</TD>
+    <TD class=3D"r data">0.0630</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>C3</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">152.1000000</TD>
+    <TD class=3D"r data">152.1000000</TD>
+    <TD class=3D"r data">18.87</TD>
+    <TD class=3D"r data">0.0003</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>C4</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.8100000</TD>
+    <TD class=3D"r data">0.8100000</TD>
+    <TD class=3D"r data">0.10</TD>
+    <TD class=3D"r data">0.7545</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>C5</TH>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">33.6200000</TD>
+    <TD class=3D"r data">33.6200000</TD>
+    <TD class=3D"r data">4.17</TD>
+    <TD class=3D"r =
+data">0.0545</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX7></A>
+<DIV>
+<DIV class=3Dc><IMG class=3Dc style=3D"HEIGHT: 480px; WIDTH: 640px" =
+border=3D0=20
+alt=3D"Fit Plot for strength by percent"=20
+src=3D"file:///C:/Users/Keunbaik%20Lee/AppData/Local/Temp/SAS%20Temporary=
+%20Files/_TD36688_KEUNBAIKLEE-PC_/BoxPlot.png">=20
+</DIV></DIV><BR></DIV></BODY></HTML>
+
+------=_NextPart_000_0000_01D2B165.18C802A0
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/Users/Keunbaik%20Lee/AppData/Local/Temp/SAS%20Temporary%20Files/_TD36688_KEUNBAIKLEE-PC_/BoxPlot.png
+
+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
+
+------=_NextPart_000_0000_01D2B165.18C802A0--

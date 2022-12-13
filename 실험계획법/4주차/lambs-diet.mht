@@ -1,0 +1,1477 @@
+From: =?ks_c_5601-1987?B?V2luZG93cyBJbnRlcm5ldCBFeHBsb3JlciAxML+hvK0gwPrA5bXK?=
+Subject: SAS Output
+Date: Mon, 30 Sep 2013 19:49:16 +0900
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01CEBE16.25A373B0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.1.7601.17609
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01CEBE16.25A373B0
+Content-Type: text/html;
+	charset="ks_c_5601-1987"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file://C:\Users\Keunbaik Lee\AppData\Local\Temp\SAS Temporary Files\_TD10028_KEUNBAIKLEE-PC_\sashtml.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content=3D"IE=3D5.0000" =
+http-equiv=3D"X-UA-Compatible">
+<TITLE>SAS Output</TITLE>
+<META name=3DGENERATOR content=3D"MSHTML 10.00.9200.16686">
+<META content=3D"text/html; charset=3Dks_c_5601-1987" =
+http-equiv=3DContent-Type>
+<STYLE type=3Dtext/css>.aftercaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+PADDING-TOP: 4pt; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.batch {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: =
+BatangChe, Courier, monospace, sans-serif; BORDER-RIGHT: #c1c1c1 1px =
+solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 7px; FONT-STYLE: =
+normal; PADDING-TOP: 7px; PADDING-LEFT: 7px; BORDER-SPACING: 1px; =
+BORDER-LEFT: #c1c1c1 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: =
+#fafbfe
+}
+.beforecaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.body {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.bodydate {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; WIDTH: 100%; =
+BACKGROUND-COLOR: #fafbfe
+}
+.bycontentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.byline {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bylinecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; =
+WIDTH: 100%; BACKGROUND-COLOR: #fafbfe
+}
+.caption {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.cell {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.container {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.contentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.contentprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.contents {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; =
+MARGIN-RIGHT: 8px
+}
+.contentsdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+WIDTH: 100%; BACKGROUND-COLOR: #fafbfe
+}
+.contenttitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; =
+BACKGROUND-COLOR: #fafbfe
+}
+.continued {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+TEXT-ALIGN: left; BORDER-SPACING: 0px; WIDTH: 100%; BACKGROUND-COLOR: =
+#fafbfe
+}
+.data {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: italic; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#ffffff
+}
+.dataemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+BatangChe, Courier, monospace, sans-serif; BORDER-RIGHT: #c1c1c1 1px =
+solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: italic; BORDER-LEFT: #c1c1c1 0px solid; =
+BACKGROUND-COLOR: #ffffff
+}
+.dataempty {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datafixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+BatangChe, Courier, sans-serif; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrong {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#ffffff
+}
+.datastrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+BatangChe, Courier, monospace, sans-serif; BORDER-RIGHT: #c1c1c1 1px =
+solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; =
+BACKGROUND-COLOR: #ffffff
+}
+.date {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+WIDTH: 100%; BACKGROUND-COLOR: #fafbfe
+}
+.document {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.errorbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.errorcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.errorcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, sans-serif; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.extendedpage {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 1pt solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #000000 1pt solid; =
+BORDER-BOTTOM: #000000 1pt solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; TEXT-ALIGN: center; BORDER-LEFT: #000000 1pt solid; =
+BACKGROUND-COLOR: #fafbfe
+}
+.fatalbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, sans-serif; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.folderaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.footer {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasis {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; =
+BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasisfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, monospace, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; =
+BACKGROUND-COLOR: #edf2f9
+}
+.footerempty {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.footerfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, sans-serif; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.footerstrong {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.footerstrongfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, monospace, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.frame {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.graph {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: =
+1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.header {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+BatangChe, Courier, monospace, sans-serif; BORDER-RIGHT: #b0b7bb 1px =
+solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; =
+BACKGROUND-COLOR: #d8dbd3
+}
+.headerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+BatangChe, Courier, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headersandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.headerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+BatangChe, Courier, monospace, sans-serif; BORDER-RIGHT: #b0b7bb 1px =
+solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; =
+BACKGROUND-COLOR: #d8dbd3
+}
+.index {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.indexaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.indextitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; =
+BACKGROUND-COLOR: #fafbfe
+}
+.layoutcontainer {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: =
+#000000 0px solid
+}
+.layoutregion {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: =
+#000000 0px solid
+}
+.list {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.list10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.list2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.list3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.list4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.list5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.list6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.list7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.list8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.list9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.listitem {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.listitem10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.listitem2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.listitem3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.listitem4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.listitem5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.listitem6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.listitem7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.listitem8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.listitem9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.note {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.notebanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.notecontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.notecontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, sans-serif; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.output {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: =
+1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.pageno {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; =
+BACKGROUND-COLOR: #fafbfe
+}
+.pages {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; =
+MARGIN-RIGHT: 8px
+}
+.pagesdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+WIDTH: 100%; BACKGROUND-COLOR: #fafbfe
+}
+.pagesitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, =
+Helvetica, Helv, sans-serif; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.pagesproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.pagesprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.pagestitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; =
+BACKGROUND-COLOR: #fafbfe
+}
+.paragraph {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.parskip {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: bold; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BORDER-LEFT: #000000 0px solid
+}
+.prepage {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.proctitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.proctitlefixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, monospace, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.rowfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasis {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; =
+BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasisfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, monospace, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; =
+BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterempty {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, sans-serif; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrong {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrongfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, monospace, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #edf2f9
+}
+.rowheader {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+BatangChe, Courier, monospace, sans-serif; BORDER-RIGHT: #b0b7bb 1px =
+solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: =
+#112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; =
+BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+BatangChe, Courier, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+BatangChe, Courier, monospace, sans-serif; BORDER-RIGHT: #b0b7bb 1px =
+solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: =
+#112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; =
+BACKGROUND-COLOR: #edf2f9
+}
+.systemfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle10 {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle2 {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle3 {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle4 {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle5 {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle6 {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle7 {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle8 {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle9 {
+	FONT-SIZE: small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systitleandfootercontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; =
+WIDTH: 100%; BACKGROUND-COLOR: #fafbfe
+}
+.table {
+	BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 0px solid; =
+BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 0px solid; =
+BORDER-SPACING: 0px; BORDER-LEFT: #c1c1c1 1px solid
+}
+.top_stacked_value {
+	PADDING-BOTTOM: 1px
+}
+.middle_stacked_value {
+	PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+.bottom_stacked_value {
+	PADDING-TOP: 1px
+}
+.titleandnotecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Gulim, =
+Gulim, Helvetica, Helv, sans-serif; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; =
+WIDTH: 100%; BACKGROUND-COLOR: #fafbfe
+}
+.titlesandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.usertext {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.warnbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.warncontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Gulim, Gulim, Helvetica, Helv, =
+sans-serif; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.warncontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: BatangChe, Courier, sans-serif; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.l {
+	TEXT-ALIGN: left
+}
+.c {
+	TEXT-ALIGN: center
+}
+.r {
+	TEXT-ALIGN: right
+}
+.d {
+	TEXT-ALIGN: right
+}
+.j {
+	TEXT-ALIGN: justify
+}
+.t {
+	VERTICAL-ALIGN: top
+}
+.m {
+	VERTICAL-ALIGN: middle
+}
+.b {
+	VERTICAL-ALIGN: bottom
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+.stacked_cell {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 0px
+}
+</STYLE>
+
+<SCRIPT language=3Djavascript type=3Dtext/javascript>
+<!--=20
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY class=3Dbody onload=3Dstartup() onunload=3Dshutdown()>
+<SCRIPT language=3Djavascript type=3Dtext/javascript>
+<!--=20
+var _info =3D navigator.userAgent
+var _ie =3D (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 =3D _info.indexOf("x64") > 0
+
+//-->
+</SCRIPT>
+
+<DIV class=3Dbranch><A name=3DIDX></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">SAS =
+=BD=C3=BD=BA=C5=DB</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The GLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Class Levels" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D3 scope=3Dcolgroup>Class Level=20
+  Information</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Class</TH>
+    <TH class=3D"r b header" scope=3Dcol>Levels</TH>
+    <TH class=3D"l b header" scope=3Dcol>Values</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>diet</TH>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"l data">1 2 =
+3</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX1></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Number of Observations" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Number of Observations =
+Read</TH>
+    <TD class=3D"r data">12</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Number of Observations =
+Used</TH>
+    <TD class=3D"r data">12</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX2></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">SAS =
+=BD=C3=BD=BA=C5=DB</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The GLM Procedure</DIV>
+<DIV class=3D"c proctitle">&nbsp;</DIV>
+<DIV class=3D"l proctitle">Dependent Variable: wtgain </DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Overall ANOVA" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Source</TH>
+    <TH class=3D"r b header" scope=3Dcol>DF</TH>
+    <TH class=3D"r b header" scope=3Dcol>Sum of Squares</TH>
+    <TH class=3D"r b header" scope=3Dcol>Mean Square</TH>
+    <TH class=3D"r b header" scope=3Dcol>F Value</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Model</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">114.8666667</TD>
+    <TD class=3D"r data">57.4333333</TD>
+    <TD class=3D"r data">4.35</TD>
+    <TD class=3D"r data">0.0476</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Error</TH>
+    <TD class=3D"r data">9</TD>
+    <TD class=3D"r data">118.8000000</TD>
+    <TD class=3D"r data">13.2000000</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Corrected Total</TH>
+    <TD class=3D"r data">11</TD>
+    <TD class=3D"r data">233.6666667</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r =
+data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX3></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Fit Statistics" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>R-Square</TH>
+    <TH class=3D"r b header" scope=3Dcol>Coeff Var</TH>
+    <TH class=3D"r b header" scope=3Dcol>Root MSE</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>wtgain&nbsp;Mean</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">0.491583</TD>
+    <TD class=3D"r data">27.59378</TD>
+    <TD class=3D"r data">3.633180</TD>
+    <TD class=3D"r =
+data">13.16667</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX4></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Type I Model ANOVA" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Source</TH>
+    <TH class=3D"r b header" scope=3Dcol>DF</TH>
+    <TH class=3D"r b header" scope=3Dcol>Type I SS</TH>
+    <TH class=3D"r b header" scope=3Dcol>Mean Square</TH>
+    <TH class=3D"r b header" scope=3Dcol>F Value</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>diet</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">114.8666667</TD>
+    <TD class=3D"r data">57.4333333</TD>
+    <TD class=3D"r data">4.35</TD>
+    <TD class=3D"r =
+data">0.0476</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX5></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Type III Model ANOVA" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Source</TH>
+    <TH class=3D"r b header" scope=3Dcol>DF</TH>
+    <TH class=3D"r b header" scope=3Dcol>Type III SS</TH>
+    <TH class=3D"r b header" scope=3Dcol>Mean Square</TH>
+    <TH class=3D"r b header" scope=3Dcol>F Value</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>diet</TH>
+    <TD class=3D"r data">2</TD>
+    <TD class=3D"r data">114.8666667</TD>
+    <TD class=3D"r data">57.4333333</TD>
+    <TD class=3D"r data">4.35</TD>
+    <TD class=3D"r =
+data">0.0476</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX6></A>
+<DIV>
+<DIV class=3Dc><IMG class=3Dc style=3D"HEIGHT: 480px; WIDTH: 640px" =
+border=3D0=20
+alt=3D"Fit Plot for wtgain by diet"=20
+src=3D"file:///C:/Users/Keunbaik%20Lee/AppData/Local/Temp/SAS%20Temporary=
+%20Files/_TD10028_KEUNBAIKLEE-PC_/BoxPlot.png">=20
+</DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX7></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">SAS =
+=BD=C3=BD=BA=C5=DB</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The GLM Procedure</DIV>
+<P>
+<DIV>
+<DIV class=3Dc><IMG class=3Dc style=3D"HEIGHT: 480px; WIDTH: 640px" =
+border=3D0=20
+alt=3D"Distribution of wtgain by diet"=20
+src=3D"file:///C:/Users/Keunbaik%20Lee/AppData/Local/Temp/SAS%20Temporary=
+%20Files/_TD10028_KEUNBAIKLEE-PC_/BoxPlot1.png">=20
+</DIV></DIV><BR><A name=3DIDX8></A>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Means" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l b header" rowSpan=3D2 scope=3Dcol>Level =
+of<BR>diet</TH>
+    <TH class=3D"r b header" rowSpan=3D2 scope=3Dcol>N</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>wtgain</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Mean</TH>
+    <TH class=3D"r b header" scope=3Dcol>Std Dev</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1</TH>
+    <TH class=3D"r data">3</TH>
+    <TD class=3D"r data">10.0000000</TD>
+    <TD class=3D"r data">2.64575131</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>2</TH>
+    <TH class=3D"r data">5</TH>
+    <TD class=3D"r data">16.8000000</TD>
+    <TD class=3D"r data">3.27108545</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>3</TH>
+    <TH class=3D"r data">4</TH>
+    <TD class=3D"r data">11.0000000</TD>
+    <TD class=3D"r =
+data">4.54606057</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX9></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"c systemtitle">SAS =
+=BD=C3=BD=BA=C5=DB</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"c proctitle">The GLM Procedure</DIV>
+<DIV class=3D"c proctitle">&nbsp;</DIV>
+<DIV class=3D"l proctitle">Dependent Variable: wtgain </DIV>
+<P>
+<DIV>
+<DIV align=3Dcenter>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure GLM: Estimates" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Parameter</TH>
+    <TH class=3D"r b header" scope=3Dcol>Estimate</TH>
+    <TH class=3D"r b header" scope=3Dcol>Standard Error</TH>
+    <TH class=3D"r b header" scope=3Dcol>t&nbsp;Value</TH>
+    <TH class=3D"r b header" =
+scope=3Dcol>Pr&nbsp;&gt;&nbsp;|t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>L1</TH>
+    <TD class=3D"r data">76.6000000</TD>
+    <TD class=3D"r data">6.68281378</TD>
+    <TD class=3D"r data">11.46</TD>
+    <TD=20
+class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV></BODY></H=
+TML>
+
+------=_NextPart_000_0000_01CEBE16.25A373B0
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/Users/Keunbaik%20Lee/AppData/Local/Temp/SAS%20Temporary%20Files/_TD10028_KEUNBAIKLEE-PC_/BoxPlot.png
+
+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
+SI8BAEBw+f/rCuvLBoZCAAAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01CEBE16.25A373B0
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/Users/Keunbaik%20Lee/AppData/Local/Temp/SAS%20Temporary%20Files/_TD10028_KEUNBAIKLEE-PC_/BoxPlot1.png
+
+iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAIAAAC6s0uzAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAd
+4UlEQVR4nO3df3DU9Z348ffGNaVRDqiABqtWrZ6KAwoYJlYdT3GwEKhnsWpVWjqdSOm1FPHQMrbq
+yMxdiyfDecNBRmtP5quHnm1PYKqH15ujODkxqMmA57Tq3EEFAYtXRUZiyH7/2HabJhBC3OwrbB6P
+v3Y/+9nP55VI8+znR7KZ5ubmBACUVjalNGbMmOgxAGAAaWlpqYieAQAGIgEGgAACDAABBBgAAggw
+AAQQYAAIIMAAEECAASCAAANAAAEGgAACDAABBBgAAggw/N4DDzwwaNCgTCaTyWQqKytPP/30v/qr
+v3rzzTc7rpPJZGpra4u1x05by2QyV199dR9tvMSef/750047LZPJ3HjjjVEzdBT73YCDEmD4vfnz
+55988sm5XC6Xy7W2tq5bt+6EE04488wzZ8yY0XG1/fv393CD+ZZ3v06nrf3mN785opm7313PRy26
+hx56aOvWrbt27Xr88cc/znZ68j3socDvBhxUNnoA6EeGDBlSePzZz3723nvvvfzyy6+44ooFCxb8
+8Ic/TCnlcrki7q64Wyvlxg/rxz/+cUppxIgRgTN0FPvdgINyBAzd+Yu/+IuU0uLFi/NPOx2Q/epX
+v6qrq6uqqsovnzNnzo4dO/Iv1dXV5R9Mnz698N4FCxZMnDgx/6Dr1lJKf/mXfzljxozCBl955ZXC
+S5lMprDNlNK//du/dXzvQXfXaeMtLS1XXnllfvnVV1+9efPmjhu///77r7rqqsKu33333e6/M91s
+7VOf+lRhs7fcckvX92YymXHjxnV8OnTo0MLTH/zgB/nJu35Rhf0W5nzkkUcKX2ZbW9udd9554okn
+5l/60pe+tG3btoN+N3rx9ULxNTc354BcLqV04YUXdl2+du3alFJhncLjwtP9+/fncrn9+/d///vf
+7/pq4emkSZNSSvX19QcOHDjoCsOHD08pXXbZZR999NFHH3300EMPpZTuuuuuwsqjR48urPzTn/60
+43sPNVvh6X//93+nlIYMGZLf+IMPPphS+v73v99x15MnT/7oo49+97vfdXpvV91vreveO/n5z3+e
+Uvqv//qvQ00+bdq0g77061//OqX0iU98Ir/fpUuXdlzhjjvuSCn98z//cy6Xe/vtt7/whS+klN54
+441Dfat7/vVC0TU3Nwsw/N6hAvyLX/yi+wCvX7++0NROG+y08qhRo7pfoVMGFi5c2HHXHyfAh934
+scceW3jpqaee6j5I3W/toCt0dODAgZTS3Llzc7nchg0bvv71r6eUfv7zn+fyP5VS+ulPf9rDr2L+
+/Pkdv4rJkycXXsr/P6d8j7tu54i+Xii65uZmp6DhMD744INDvbRnz5477rjjq1/96jHHHJPJZJYt
+W9b9po477rjuVzjrrLM6Pi3ujbujR4/uZuNnn3124XFFxeF/MnS/te7lt//kk0+mlC655JLPf/7z
+P/rRj6655pqU0tixY4cNG5Z/fFDnnntux6eXX3554XEul3vmmWdSSu3t7f/5n/+ZP4Vw0kknHXQ7
+R/r1QtH5ZweHMW3atEO9NGzYsL/9279944033nnnnR/96Eff/OY3i3XLbtlrbm7evn3766+/nlI6
+5ZRTrrnmmv3797/66qsppZkzZ3bzxm5iuW3btq985SsjRow45phjLr/88k984hNFHxuKSIChO//x
+H/+RUvrrv/7rg76ayWTyd2mdcMIJs2bN+td//dePubv8Nc6CxsbGQ63529/+9kg3vmXLlo5P169f
+f6RbKOLWxowZk1L62c9+llIaMmTIsGHDUkr549evfe1rPd9vx2/Rqaee+uijj7722mv5U3z5+7/e
+fvvtIxoMSsc1YMhLKZ1xxhmFp2+88cY999yTUrruuus6rpM6XCysr69PKW3YsCGXy23fvr3Tq/kj
+uXfeeafw3rPOOqvTHlOXO4Muvvjijz766MCBAytWrEh/ehNWSil/01DhruyOW+u6u44rFG6bOnDg
+QOH2pcJtU+lwF5g76X5rXfd+UEuWLEkpXXHFFfmnf/d3f5dSuuSSS7r5ovL1HTly5IEDBwrfotTh
+GvBJJ52Uy+UOHDiwcePGG264IaX0i1/8ous8R/r1QtG5CQv+aPHixYWTlscee+wZZ5zxzW9+M38P
+bUH605t33n///W9961v5o7eU0je+8Y09e/YUXl23bl2nPHQNcMetpZTmzp07fvz4/LuuuOKKpqam
+wqvbt2+fPHly/qUvfOEL//iP/9ipGV1313HjuVyuubn5iiuuyK8zadKkLVu2dNz11KlTC0/zdyl3
+/+3qZmu5ngV4165dKaUlS5bkn/7P//xPSunHP/5xN19ULpdramoq7PeLX/xi/kJvYeU///M/z790
+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
+AQaAAAIMAAEEGAACCDAABBBgAAggwAAQQIABIIAAA0AAAQaAAAIMAAEEGAACCDAABBBgAAggwAAQ
+QIABIEA2egAAPpZMJlO6nVXXZTK3lm53KeVyuVLurpQEGOCot3HLW9Ej9Ima0SdHj9CHnIIGgAAC
+DAABBBgAAvQmwA0NDZWVldkOKisriz4ZAJSx3gR4zpw5TU1NbR20trYWfTIAKGO9CXA2mz3nnHOK
+PgoADBy9CfCiRYtuvvnmoo8CAANHb34P+M4770wpZbN/fG9FRYWz0ADQc70JcFtbW9HnAIABxa8h
+AUCAIzsCrqysbG1t7XjyOc8paAA4IkcW4HxlnYIGgI+pOKegTznllKJsBwAGiN4EeNmyZZWVlZlM
+Jv9nsDKZzNlnn130yQCgjPUmwAsWLHjppZeamprOP//8tra2xx577NVXXy36ZABQxnoT4A8++OD8
+888fO3ZsvrvXXXfdb3/722IPBgDlrDcBHjJkyK9+9atsNjtkyJAXXnihvb29633RAEA3ehPgFStW
+XHDBBfkHV1555fHHH3/33XcXezAAKGe9CfD111+/b9++lNK11167d+/e1tbWO+64o9iDAUA585ew
+ACBALz+OMPOnfEAhAByR3tw89e1vf7u5uflf/uVfhg0b9u67737pS1+aNm1aSumaa6752c9+VuwJ
+y1Ymk+nN20ZNS9V1xZ7l0LavTjvW9OJ9uVyu6LMAlJPeBPjv//7v9+7dO2jQoJTSsGHD1q5dO3z4
+8F27duU/ppCe27jlregRDqs3sa8ZfXLR5wAoM705BV1R0fld+U9oaG9vL8ZIAFD+ehPgL37xi1On
+Ts3/8Y133313+vTp06dP37lzZ3V1dbHHA4Dy1JsAP/744xdffPHpp5+ezWZPO+208ePHP/HEE5/+
+9KfXrVtX9PkAoCz18i9Y3Xfffffdd1/HJW66AYCe6+WvIR12CQDQjSL8IY729vaut2UBAN04siPX
+/JHugQMHOh3yXnvttcUcCgDK3ZEFuK2tLaVUWVnZ2traN/MAwIDQm1PH//u//1v0OQBgQOlNgGfM
+mDFixIg777xz9+7dRR8IAAaC3gT4+eef371799e+9rUZM2acdtpp9913X/6PcgAAPdT7Xx86++yz
+n3322ZdffvnKK69ctWrV5s2bizgWAJS33hwB79y58wc/+ME555wzefLkYcOGvffee+oLAEekN0fA
+V1111datW1evXj1+/PiqqqqizwQAZa83R8AtLS179uwZMWLE1KlTzzzzzAULFmzbtq3okwFAGevl
+NeCKiopzzjln7dq1a9euvfHGG3/5y182NjYWdzIAKGO9OQJ+7733GhoaTj/99HHjxn36059ubW1V
+XwA4Ir0JcE1NzbnnnvvrX//6tddeq62t9Yeg4Wj33HPPZf5gzZo10ePAgNCbdr722muXXnqpT0CC
+8vDcc89dd911q1evzuVy69atu+WWWzQYSkBEYaC76qqrVq9eXVdXl1KaNGnSk08+edVVV/mEb+hr
+zh4DKV/fvEmTJgVOAgOHAAOp4znn5557LnASGDgEGAa6jtd9C9eDo4eC8ucaMAx0heu++aeF68FA
+nxJgIE2aNMldV1BiTkEDQAABBoAAAgwAAQQYAAIIMAAEEGAACCDAABBAgAEggAADQAABBoAAAgwA
+AQQYgJ56f19b9AjlQ4AB6JHGll1Xzn6msWVX9CBlQoABOLyNW965a9lLN159xl3LXtrwigYXgQAD
+cBgbt7zz3Qeb7p09bt6Xz/ubb024e7kGF4EAA9CdQn0vuWBkSqlm9HANLgoBBuCQGlt2daxvXqHB
+rgd/HAIMwMG9v69t7v0b6y47tWN982pGD6+77NS59290X3SvCTAABze4Krv09po167d2Pdu8ccs7
+a9ZvXXp7zeCqbMhsZUCAATik2jEju17xLVwVrh3T+ciYnhNgALrT6a6rTvdk0WtOHQBwGPkGf/fB
+prrLTl2zfqv6FoUjYAAOr2b08EVzxj3+zJuL5qhvcTgCBqBHaseM/PflV7vrqlgcAQPQU+pbRAIM
+AAEEGAACCDAABHA2H+AoN2pazcw10UP0jeq66An6kAADHOW2r964bnn0EH2iZvSt0SP0IaegASCA
+AANAAAEGgAACDAABBHig8KHZAP1KcIDb29tnzJjRaeFNN91UWVl5yy23hIxUlhpbdl05+5nGls4f
+qQ1AlOAAV1VVPfXUUx2XLF++fP/+/fv27fvggw8aGhqiBisnG7e8c9eyl268+oy7lv3JR2oDECg4
+wB9++GGnJatWrZo3b142m503b96qVatCpionhY/Onvfl8zp+pDYAsfrdNeAXXnihtrY2pVRbW/vi
+iy9Gj3N0K9Q3/+Gd+Y/U1mCA/qDfBbitra2ioiKllM1mux4f03ONLbs61jev0GDXgwFi9bs/RZnN
+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
+
+------=_NextPart_000_0000_01CEBE16.25A373B0--
