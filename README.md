@@ -14,3 +14,5 @@ Books I Uploaded : ( Class <-> Textbook Title )
 \* Some books weren't uploaded for copyrights. Books will be constantly uploaded.  
   
 \** For some textbooks, I could not upload the notes.  
+# ------------------------------------------------------------------------------------------------------------------------
+위 내용들로 올리다가 결국 학교에서 수강한 과목들을 올리는 Repository로 변경되었습니다.
